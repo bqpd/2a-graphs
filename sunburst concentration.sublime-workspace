@@ -1,0 +1,344 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hsl",
+				"hslString"
+			],
+			[
+				"sle",
+				"selectAll"
+			],
+			[
+				"arc",
+				"arc"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3125,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "conc clean.csv",
+			"settings":
+			{
+				"buffer_size": 7312,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "csv_to_json.py",
+			"settings":
+			{
+				"buffer_size": 1103,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2a_concentration.json",
+			"settings":
+			{
+				"buffer_size": 30773,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/flare.json",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/concentration_classes_cleaned.csv",
+		"/C/Users/pearl/Desktop/treeflying/robotlib/examples/VanDerPol.m",
+		"/C/Users/pearl/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/pearl/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\..\\n",
+			"4\\.5\\n",
+			"\\..\\n",
+			"\\n6.1",
+			"6.1",
+			"\\..\\n",
+			",",
+			"\"",
+			"\"2\",\"6\"",
+			"\\.",
+			".",
+			"\\n",
+			"200px",
+			"\\n...\\n",
+			"...\\n",
+			"\\..\\n",
+			"\\...\\n",
+			"4.",
+			"4.5",
+			"Course 1",
+			"children",
+			"\\n#",
+			"    #",
+			"esd",
+			"2.004",
+			"2.5",
+			"\\n1\\n",
+			"1\\n",
+			"1",
+			"\"",
+			"class",
+			"course",
+			"b",
+			",",
+			"\"",
+			"\"NULL\",",
+			"\\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"4.500\\n",
+			"\\n.0\\n",
+			".",
+			"",
+			"\",\"",
+			"\"\\n\"",
+			"\\n",
+			"",
+			"\", \"#",
+			", \"#",
+			"'",
+			"course",
+			"class",
+			"all_classes",
+			"\\n",
+			"",
+			","
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 3125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "conc clean.csv",
+					"settings":
+					{
+						"buffer_size": 7312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3925,
+								3925
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 10272.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "csv_to_json.py",
+					"settings":
+					{
+						"buffer_size": 1103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								462,
+								462
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "2a_concentration.json",
+					"settings":
+					{
+						"buffer_size": 30773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13617,
+								13626
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
