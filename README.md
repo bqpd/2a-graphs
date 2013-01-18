@@ -15,9 +15,10 @@ still done by hand
 
 extensions
 -----------
-- clean up tooltips with [Poshy Tip](http://vadikom.com/demos/poshytip/#download)
+- using jQuery, 
+  - clean up tooltips with [Poshy Tip](http://vadikom.com/demos/poshytip/#download)
+  - use a multiple select to let people choose which departments they want to see 
+    - useful for 2A students
+    - d.value = d.pop * d.weight
 - make it a meteor app, and show the last fiveorso people's views
   - if d.value != 0
-- use a multiple select to let people choose which departments they want to see 
-  - useful for 2A students
-  - looks like jQuery is the way to go on this as well, for it to look good
