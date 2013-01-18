@@ -15,6 +15,9 @@ still done by hand
 
 extensions
 -----------
+- note that the two basic sorts are:
+  - by number of people in a class
+  - by department
 - cleanup and comment javascript
 - using jQuery, 
   - clean up tooltips with [Poshy Tip](http://vadikom.com/demos/poshytip/#download)

@@ -4,26 +4,17 @@
         {
             "name": "Course 2", "pop": 460,
             "children": [
-                {   "name": "2.002 Mechanics and Materials II", "pop": 5,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.002"
-                },
                 {   "name": "2.96 Management in Engineering", "pop": 38,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.96"
                 },
                 {   "name": "2.72 Elements of Mechanical Design", "pop": 36,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.72"
                 },
-                {   "name": "2.12 Introduction to Robotics", "pop": 31,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.12"
-                },
                 {   "name": "2.008 Design and Manufacturing II", "pop": 34,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.008"
                 },
-                {   "name": "2.004 Dynamics and Control II", "pop": 15,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.004"
-                },
-                {   "name": "2.007 Design and Manufacturing I", "pop": 15,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.007"
+                {   "name": "2.12 Introduction to Robotics", "pop": 31,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.12"
                 },
                 {   "name": "2.14 Analysis and Design of Feedback Control Systems", "pop": 21,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.14"
@@ -34,14 +25,11 @@
                 {   "name": "2.65J Sustainable Energy", "pop": 18,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.65"
                 },
-                {   "name": "2.006 Thermal-Fluids Engineering II", "pop": 11,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.006"
+                {   "name": "2.004 Dynamics and Control II", "pop": 15,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.004"
                 },
-                {   "name": "2.722J D-Lab: Design", "pop": 12,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.722"
-                },
-                {   "name": "2.813 Energy, Materials and Manufacturing", "pop": 12,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.813"
+                {   "name": "2.007 Design and Manufacturing I", "pop": 15,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.007"
                 },
                 {   "name": "2.782J Design of Medical Devices and Implants", "pop": 14,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.782"
@@ -52,6 +40,15 @@
                 {   "name": "2.60J Fundamentals of Advanced Energy Conversion", "pop": 12,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.60"
                 },
+                {   "name": "2.722J D-Lab: Design", "pop": 12,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.722"
+                },
+                {   "name": "2.813 Energy, Materials and Manufacturing", "pop": 12,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.813"
+                },
+                {   "name": "2.006 Thermal-Fluids Engineering II", "pop": 11,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.006"
+                },
                 {   "name": "2.79J Biomaterials: Tissue Interactions", "pop": 11,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.79"
                 },
@@ -61,26 +58,20 @@
                 {   "name": "2.184 Biomechanics and Neural Control of Movement", "pop": 10,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.184"
                 },
+                {   "name": "2.739J Product Design and Development", "pop": 9,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.739"
+                },
                 {   "name": "2.772J Thermodynamics of Biomolecular Systems", "pop": 9,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.772"
                 },
                 {   "name": "2.THU Undergraduate Thesis", "pop": 9,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.THU"
                 },
-                {   "name": "2.739J Product Design and Development", "pop": 9,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.739"
-                },
                 {   "name": "2.627 Fundamentals of Photovoltaics", "pop": 8,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.627"
                 },
-                {   "name": "2.014 Engineering Systems Development", "pop": 4,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.014"
-                },
                 {   "name": "2.752 Development of Mechanical Products", "pop": 7,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.752"
-                },
-                {   "name": "2.05 Thermodynamics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.05"
                 },
                 {   "name": "2.797J Molecular, Cellular, and Tissue Biomechanics", "pop": 7,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.797"
@@ -88,83 +79,71 @@
                 {   "name": "2.66J Fundamentals of Energy in Buildings", "pop": 6,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.66"
                 },
+                {   "name": "2.002 Mechanics and Materials II", "pop": 5,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.002"
+                },
                 {   "name": "2.151 Advanced System Dynamics and Control", "pop": 5,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.151"
                 },
                 {   "name": "2.75 Precision Machine Design", "pop": 5,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.75"
                 },
+                {   "name": "2.014 Engineering Systems Development", "pop": 4,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.014"
+                },
                 {   "name": "2.737 Mechatronics", "pop": 4,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.737"
-                },
-                {   "name": "2.37 Fundamentals of Nanoengineering", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.37"
-                },
-                {   "name": "2.71 Optics", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.71"
-                },
-                {   "name": "2.792J Quantitative Systems Physiology", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.792"
-                },
-                {   "name": "2.993, 2.994 Independent Study", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.993"
-                },
-                {   "name": "2.965J Global Supply Chain Management", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.965"
-                },
-                {   "name": "2.500 Desalination and Water Purification", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.500"
-                },
-                {   "name": "2.785J Cell-Matrix Mechanics", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.785"
                 },
                 {   "name": "2.674 Micro/Nano Engineering Laboratory", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.674"
                 },
-                {   "name": "2.152 Nonlinear Control System Design", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.152"
+                {   "name": "2.71 Optics", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.71"
                 },
-                {   "name": "2.57 Nano-to-Macro Transport Processes", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.57"
+                {   "name": "2.785J Cell-Matrix Mechanics", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.785"
+                },
+                {   "name": "2.792J Quantitative Systems Physiology", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.792"
+                },
+                {   "name": "2.965J Global Supply Chain Management", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.965"
+                },
+                {   "name": "2.993, 2.994 Independent Study", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.993"
                 },
                 {   "name": "2.183 Biomechanics and Neural Control of Movement", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.183"
                 },
-                {   "name": "2.853 Introduction to Manufacturing Systems", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.853"
-                },
-                {   "name": "2.791J Cellular Biophysics", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.791"
-                },
-                {
-                    "name": "2.97 Designing for People", "pop": 2
-                },
-                {   "name": "2.810 Manufacturing Processes and Systems", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.810"
+                {   "name": "2.37 Fundamentals of Nanoengineering", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.37"
                 },
                 {   "name": "2.51 Intermediate Heat and Mass Transfer", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.51"
                 },
-                {   "name": "2.821J Materials Manufacturing", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.821"
+                {   "name": "2.57 Nano-to-Macro Transport Processes", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.57"
                 },
-                {   "name": "2.625J Electrochemical Energy Conversion and Storage: Fundamentals, Materials and Applications", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.625"
+                {   "name": "2.791J Cellular Biophysics", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.791"
                 },
-                {   "name": "2.61 Internal Combustion Engines", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.61"
+                {   "name": "2.853 Introduction to Manufacturing Systems", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.853"
                 },
-                {   "name": "2.994 Independent Study", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.994"
+                {
+                    "name": "2.97 Designing for People", "pop": 2
                 },
-                {   "name": "2.83 Energy, Materials and Manufacturing", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.83"
+                {   "name": "2.05 Thermodynamics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.05"
                 },
-                {   "name": "2.661J Architectural Thermal and Fluid Dynamics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.661"
+                {   "name": "2.152 Nonlinear Control System Design", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.152"
                 },
-                {   "name": "2.612 Marine Power and Propulsion", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.612"
+                {   "name": "2.165 Robotics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.165"
+                },
+                {   "name": "2.171 Analysis and Design of Digital Control Systems", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.171"
                 },
                 {   "name": "2.374J Design and Fabrication of Microelectromechanical Systems", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.374"
@@ -172,25 +151,46 @@
                 {   "name": "2.391J Nanostructure Fabrication", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.391"
                 },
-                {   "name": "2.793J Fields, Forces and Flows in Biological Systems", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.793"
+                {   "name": "2.500 Desalination and Water Purification", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.500"
                 },
-                {   "name": "2.171 Analysis and Design of Digital Control Systems", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.171"
+                {   "name": "2.61 Internal Combustion Engines", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.61"
+                },
+                {   "name": "2.612 Marine Power and Propulsion", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.612"
+                },
+                {   "name": "2.625J Electrochemical Energy Conversion and Storage: Fundamentals, Materials and Applications", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.625"
+                },
+                {   "name": "2.661J Architectural Thermal and Fluid Dynamics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.661"
                 },
                 {   "name": "2.673J Instrumentation and Measurement for Biological Systems", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.673"
                 },
-                {   "name": "2.165 Robotics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.165"
+                {   "name": "2.793J Fields, Forces and Flows in Biological Systems", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.793"
+                },
+                {   "name": "2.810 Manufacturing Processes and Systems", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.810"
+                },
+                {   "name": "2.821J Materials Manufacturing", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.821"
+                },
+                {   "name": "2.83 Energy, Materials and Manufacturing", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.83"
                 },
                 {   "name": "2.961 Management in Engineering", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=2.961"
+                },
+                {   "name": "2.994 Independent Study", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=2.994"
                 }
             ]
         },
         {
-            "name": "Course 6", "pop": 257,
+            "name": "Course 6", "pop": 258,
             "children": [
                 {   "name": "6.002 Circuits and Electronics", "pop": 38,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.002"
@@ -198,44 +198,35 @@
                 {   "name": "6.01 Introduction to EECS I", "pop": 32,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.01"
                 },
-                {   "name": "6.004 Computation Structures", "pop": 11,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.004"
-                },
-                {   "name": "6.007 Electromagnetic Energy: From Motors to Lasers", "pop": 8,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.007"
-                },
-                {   "name": "6.02 Introduction to EECS II", "pop": 9,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.02"
-                },
-                {   "name": "6.006 Introduction to Algorithms", "pop": 7,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.006"
-                },
                 {   "name": "6.131 Power Electronics Laboratory", "pop": 17,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.131"
                 },
                 {   "name": "6.034 Artificial Intelligence", "pop": 14,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.034"
                 },
-                {   "name": "6.07J Projects in Microscale Engineering for the Life Sciences", "pop": 10,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.07"
-                },
                 {   "name": "6.141J Robotics: Science and Systems I", "pop": 14,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.141"
-                },
-                {   "name": "6.071J Electronics, Signals, and Measurement", "pop": 10,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.071"
-                },
-                {   "name": "6.813 User Interface Design and Implementation", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.813"
                 },
                 {   "name": "6.115 Microcomputer Project Laboratory", "pop": 12,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.115"
                 },
-                {   "name": "6.041 Probabilistic Systems Analysis", "pop": 10,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.041"
+                {   "name": "6.004 Computation Structures", "pop": 11,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.004"
                 },
                 {
                     "name": "6.976 The Founder's Journey", "pop": 11
+                },
+                {   "name": "6.041 Probabilistic Systems Analysis", "pop": 10,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.041"
+                },
+                {   "name": "6.07J Projects in Microscale Engineering for the Life Sciences", "pop": 10,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.07"
+                },
+                {   "name": "6.071J Electronics, Signals, and Measurement", "pop": 10,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.071"
+                },
+                {   "name": "6.02 Introduction to EECS II", "pop": 9,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.02"
                 },
                 {   "name": "6.042J Mathematics for Computer Science", "pop": 9,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.042"
@@ -243,14 +234,29 @@
                 {   "name": "6.003 Signals and Systems", "pop": 8,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.003"
                 },
+                {   "name": "6.007 Electromagnetic Energy: From Motors to Lasers", "pop": 8,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.007"
+                },
+                {   "name": "6.006 Introduction to Algorithms", "pop": 7,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.006"
+                },
                 {   "name": "6.005 Elements of Software Construction", "pop": 6,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.005"
                 },
-                {   "name": "6.101 Introductory Analog Electronics Laboratory", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.101"
-                },
                 {   "name": "6.142J Robotics: Science and Systems II", "pop": 5,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.142"
+                },
+                {   "name": "6.902J Engineering Innovation and Design", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.902"
+                },
+                {   "name": "6.033 Computer System Engineering", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.033"
+                },
+                {   "name": "6.152J Micro/Nano Processing Technology", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.152"
+                },
+                {   "name": "6.S976-6.S979 Special Subject: Electrical Engineering", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.S976"
                 },
                 {   "name": "6.011 Introduction to Communication, Control, and Signal Processing", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.011"
@@ -258,56 +264,53 @@
                 {   "name": "6.012 Microelectronic Devices and Circuits", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.012"
                 },
-                {   "name": "6.902J Engineering Innovation and Design", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.902"
-                },
-                {   "name": "6.152J Micro/Nano Processing Technology", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.152"
-                },
-                {   "name": "6.033 Computer System Engineering", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.033"
-                },
                 {   "name": "6.013 Electromagnetics and Applications", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.013"
-                },
-                {   "name": "6.302 Feedback Systems", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.302"
-                },
-                {   "name": "6.S976-6.S979 Special Subject: Electrical Engineering", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.S976"
-                },
-                {   "name": "6.100 Electrical Engineering and Computer Science Project", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.100"
-                },
-                {   "name": "6.061 Introduction to Electric Power Systems", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.061"
-                },
-                {   "name": "6.867 Machine Learning", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.867"
-                },
-                {
-                    "name": "6.055 The Art of Approximation in Science and Engineering", "pop": 1
-                },
-                {   "name": "6.072J Introduction to Digital Electronics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.072"
                 },
                 {   "name": "6.046J Design and Analysis of Algorithms", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.046"
                 },
                 {
-                    "name": "6.S196 Principles and Practice of Assistive Technology", "pop": 1
+                    "name": "6.055 The Art of Approximation in Science and Engineering", "pop": 1
                 },
-                {   "name": "6.933 Entrepreneurship in Engineering: The Founder's Journey", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.933"
+                {   "name": "6.061 Introduction to Electric Power Systems", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.061"
                 },
-                {   "name": "6.832 Underactuated Robotics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.832"
+                {   "name": "6.072J Introduction to Digital Electronics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.072"
                 },
                 {
                     "name": "6.077J Research Topics in Architecture", "pop": 1
                 },
+                {   "name": "6.100 Electrical Engineering and Computer Science Project", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.100"
+                },
+                {   "name": "6.101 Introductory Analog Electronics Laboratory", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.101"
+                },
                 {   "name": "6.163 Strobe Project Laboratory", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=6.163"
+                },
+                {   "name": "6.302 Feedback Systems", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.302"
+                },
+                {   "name": "6.813 User Interface Design and Implementation", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.813"
+                },
+                {   "name": "6.832 Underactuated Robotics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.832"
+                },
+                {   "name": "6.867 Machine Learning", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.867"
+                },
+                {   "name": "6.933 Entrepreneurship in Engineering: The Founder's Journey", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.933"
+                },
+                {
+                    "name": "6.S196 Principles and Practice of Assistive Technology", "pop": 1
+                },
+                {   "name": "6.00 Introduction to Computer Science and Programming", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=6.00"
                 }
             ]
         },
@@ -335,17 +338,14 @@
                 {   "name": "15.872 System Dynamics II", "pop": 7,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.872"
                 },
-                {   "name": "15.401 Finance Theory I", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.401"
-                },
-                {   "name": "15.054J The Airline Industry", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.054"
-                },
                 {   "name": "15.668 People and Organizations", "pop": 4,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.668"
                 },
                 {   "name": "15.354 Innovation and Entrepreneurship: How to Do It", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.354"
+                },
+                {   "name": "15.401 Finance Theory I", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.401"
                 },
                 {   "name": "15.761 Introduction to Operations Management", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.761"
@@ -353,35 +353,32 @@
                 {   "name": "15.762J Supply Chain Planning", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.762"
                 },
+                {   "name": "15.054J The Airline Industry", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.054"
+                },
                 {   "name": "15.058 Optimization Methods in Operations Research", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.058"
-                },
-                {   "name": "15.783J Product Design and Development", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.783"
-                },
-                {   "name": "15.810 Marketing Management", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.810"
-                },
-                {   "name": "15.763J Manufacturing System and Supply Chain Design", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.763"
-                },
-                {   "name": "15.828 Design and Marketing New Products", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.828"
                 },
                 {   "name": "15.616 Basic Business Law, Tilted Towards Innovation and Strategy", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.616"
                 },
-                {   "name": "15.821 Listening to the Customer", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.821"
+                {   "name": "15.763J Manufacturing System and Supply Chain Design", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.763"
+                },
+                {   "name": "15.783J Product Design and Development", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.783"
+                },
+                {   "name": "15.828 Design and Marketing New Products", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.828"
+                },
+                {   "name": "15.031J Energy Decisions, Markets, and Policies", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.031"
                 },
                 {   "name": "15.279 Management Communication for Undergraduates", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.279"
                 },
-                {   "name": "15.846 Branding", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.846"
-                },
-                {   "name": "15.769 Operations Strategy", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.769"
+                {   "name": "15.369 Corporate Entrepreneurship: Strategies for Technology-Based New Business Development", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.369"
                 },
                 {   "name": "15.390 New Enterprises", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.390"
@@ -389,11 +386,11 @@
                 {   "name": "15.615 Basic Business Law for the Entrepreneur and Manager", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.615"
                 },
-                {
-                    "name": "15.S24 Special Seminar in Management", "pop": 1
+                {   "name": "15.655J Law, Technology, and Public Policy", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.655"
                 },
-                {   "name": "15.915 Laboratory for Sustainable Business", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.915"
+                {   "name": "15.769 Operations Strategy", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.769"
                 },
                 {   "name": "15.770J Logistics Systems", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.770"
@@ -401,61 +398,43 @@
                 {   "name": "15.771J Case Studies in Logistics and Supply Chain Management", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=15.771"
                 },
-                {   "name": "15.031J Energy Decisions, Markets, and Policies", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.031"
+                {   "name": "15.810 Marketing Management", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.810"
                 },
-                {   "name": "15.655J Law, Technology, and Public Policy", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.655"
+                {   "name": "15.821 Listening to the Customer", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.821"
                 },
-                {   "name": "15.369 Corporate Entrepreneurship: Strategies for Technology-Based New Business Development", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.369"
+                {   "name": "15.846 Branding", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.846"
+                },
+                {   "name": "15.915 Laboratory for Sustainable Business", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=15.915"
+                },
+                {
+                    "name": "15.S24 Special Seminar in Management", "pop": 1
                 }
             ]
         },
         {
             "name": "Course 1", "pop": 65,
             "children": [
+                {   "name": "1.040 Project Management", "pop": 12,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.040"
+                },
                 {   "name": "1.010 Uncertainty in Engineering", "pop": 5,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.010"
                 },
                 {   "name": "1.020 Ecology II: Engineering for Sustainability", "pop": 5,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.020"
                 },
-                {   "name": "1.070J Introduction to Hydrology", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.070"
-                },
-                {   "name": "1.071J Global Change Science", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.071"
-                },
-                {   "name": "1.060 Engineering Mechanics II", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.060"
-                },
-                {   "name": "1.040 Project Management", "pop": 12,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.040"
-                },
-                {   "name": "1.041J Transportation Systems Modeling", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.041"
-                },
-                {   "name": "1.050 Engineering Mechanics I", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.050"
-                },
                 {   "name": "1.101 Introduction to Civil and Environmental Engineering Design I", "pop": 4,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.101"
-                },
-                {   "name": "1.021 Introduction to Modeling and Simulation", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.021"
                 },
                 {   "name": "1.011 Project Evaluation", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.011"
                 },
-                {   "name": "1.054 Mechanics and Design of Concrete Structures", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.054"
-                },
                 {   "name": "1.018J Ecology I: The Earth System", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.018"
-                },
-                {   "name": "1.102 Introduction to Civil and Environmental Engineering Design II", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.102"
                 },
                 {   "name": "1.035 Mechanics of Structures and Soils", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.035"
@@ -463,14 +442,44 @@
                 {   "name": "1.036 Structural and Geotechnical Engineering Design", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.036"
                 },
+                {   "name": "1.071J Global Change Science", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.071"
+                },
+                {   "name": "1.102 Introduction to Civil and Environmental Engineering Design II", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.102"
+                },
+                {   "name": "1.041J Transportation Systems Modeling", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.041"
+                },
+                {   "name": "1.050 Engineering Mechanics I", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.050"
+                },
+                {   "name": "1.060 Engineering Mechanics II", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.060"
+                },
                 {   "name": "1.851J Water and Sanitation Infrastructure in Developing Countries", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.851"
+                },
+                {   "name": "1.013 Senior Civil and Environmental Engineering Design", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.013"
+                },
+                {   "name": "1.016 Design for Complex Environmental Issues: Building Solutions and Communicating Ideas", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.016"
+                },
+                {   "name": "1.021 Introduction to Modeling and Simulation", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.021"
+                },
+                {   "name": "1.054 Mechanics and Design of Concrete Structures", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.054"
                 },
                 {   "name": "1.061 Transport Processes in the Environment", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.061"
                 },
-                {   "name": "1.013 Senior Civil and Environmental Engineering Design", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.013"
+                {   "name": "1.070J Introduction to Hydrology", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.070"
+                },
+                {   "name": "1.106 Environmental Fluid Transport Processes and Hydrology Laboratory", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.106"
                 },
                 {   "name": "1.201J Transportation Systems Analysis: Demand and Economics", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.201"
@@ -487,12 +496,6 @@
                 {   "name": "1.819J Design for Sustainability", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.819"
                 },
-                {   "name": "1.106 Environmental Fluid Transport Processes and Hydrology Laboratory", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.106"
-                },
-                {   "name": "1.016 Design for Complex Environmental Issues: Building Solutions and Communicating Ideas", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=1.016"
-                },
                 {   "name": "1.00 Introduction to Computers and Engineering Problem Solving", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=1.00"
                 }
@@ -507,20 +510,20 @@
                 {   "name": "18.06 Linear Algebra", "pop": 7,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=18.06"
                 },
-                {   "name": "18.075 Methods for Scientists and Engineers", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=18.075"
-                },
                 {   "name": "18.443 Statistics for Applications", "pop": 5,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=18.443"
                 },
                 {   "name": "18.085 Computational Science and Engineering I", "pop": 4,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=18.085"
                 },
-                {   "name": "18.354J Nonlinear Dynamics II: Continuum Systems", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=18.354"
-                },
                 {   "name": "18.353J Nonlinear Dynamics I: Chaos", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=18.353"
+                },
+                {   "name": "18.075 Methods for Scientists and Engineers", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=18.075"
+                },
+                {   "name": "18.354J Nonlinear Dynamics II: Continuum Systems", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=18.354"
                 },
                 {   "name": "18.445 Introduction to Stochastic Processes", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=18.445"
@@ -533,9 +536,6 @@
                 {   "name": "ESD.051J Engineering Innovation and Design", "pop": 22,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=ESD.051"
                 },
-                {   "name": "ESD.054 Engineering Leadership", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=ESD.054"
-                },
                 {   "name": "ESD.052 Project Engineering", "pop": 4,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=ESD.052"
                 },
@@ -545,31 +545,31 @@
                 {   "name": "ESD.124 Energy Systems and Climate Change Mitigation", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=ESD.124"
                 },
-                {   "name": "ESD.260J Logistics Systems", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=ESD.260"
-                },
                 {   "name": "ESD.00 Introduction to Engineering Systems", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=ESD.00"
+                },
+                {   "name": "ESD.054 Engineering Leadership", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=ESD.054"
+                },
+                {   "name": "ESD.260J Logistics Systems", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=ESD.260"
                 }
             ]
         },
         {
             "name": "Course 20", "pop": 28,
             "children": [
+                {   "name": "20.110J Thermodynamics of Biomolecular Systems", "pop": 6,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=20.110"
+                },
                 {   "name": "20.310J Molecular, Cellular, and Tissue Biomechanics", "pop": 5,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=20.310"
                 },
                 {   "name": "20.111J Physical Chemistry of Biomolecular Systems", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=20.111"
                 },
-                {   "name": "20.110J Thermodynamics of Biomolecular Systems", "pop": 6,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=20.110"
-                },
                 {   "name": "20.109 Laboratory Fundamentals in Biological Engineering", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=20.109"
-                },
-                {   "name": "20.342 Molecular Structure of Biological Materials", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=20.342"
                 },
                 {   "name": "20.320 Analysis of Biomolecular and Cellular Systems", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=20.320"
@@ -577,17 +577,20 @@
                 {   "name": "20.330J Fields, Forces and Flows in Biological Systems", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=20.330"
                 },
-                {   "name": "20.371J Quantitative Systems Physiology", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=20.371"
+                {   "name": "20.342 Molecular Structure of Biological Materials", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=20.342"
                 },
                 {   "name": "20.104J Environmental Cancer Risks, Prevention, and Therapy", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=20.104"
                 },
-                {   "name": "20.411J Cell-Matrix Mechanics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=20.411"
+                {   "name": "20.371J Quantitative Systems Physiology", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=20.371"
                 },
                 {   "name": "20.385 Understanding Current Research in Synthetic Biology", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=20.385"
+                },
+                {   "name": "20.411J Cell-Matrix Mechanics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=20.411"
                 },
                 {   "name": "20.416J Evaluating Current Research in Molecular and Cellular Biophysics", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=20.416"
@@ -601,9 +604,6 @@
             "name": "SP", "pop": 26,
             "children": [
                 {
-                    "name": "SP.722 D-Lab II: Design", "pop": 3
-                },
-                {
                     "name": "SP.775 D-Lab: Energy", "pop": 10
                 },
                 {
@@ -611,6 +611,9 @@
                 },
                 {
                     "name": "SP.784 Wheelchair Design in Developing Countries", "pop": 4
+                },
+                {
+                    "name": "SP.722 D-Lab II: Design", "pop": 3
                 },
                 {
                     "name": "SP.721 D-Lab I: Development", "pop": 2
@@ -626,17 +629,8 @@
         {
             "name": "Course 4", "pop": 24,
             "children": [
-                {   "name": "4.501 Digital Design and Fabrication", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.501"
-                },
-                {   "name": "4.440J Building Structural Systems I", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.440"
-                },
                 {   "name": "4.111 Introduction to Architecture and Environmental Design", "pop": 6,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=4.111"
-                },
-                {   "name": "4.301 Introduction to Visual Arts", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.301"
                 },
                 {   "name": "4.401 Architectural Building Systems", "pop": 4,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=4.401"
@@ -644,11 +638,17 @@
                 {   "name": "4.42J Fundamentals of Energy in Buildings", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=4.42"
                 },
-                {   "name": "4.430 Daylighting", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.430"
+                {   "name": "4.440J Building Structural Systems I", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.440"
                 },
-                {   "name": "4.500 Introduction to Design Computing", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.500"
+                {   "name": "4.112 Architecture Design Fundamentals I", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.112"
+                },
+                {   "name": "4.113 Architecture Design Fundamentals II", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.113"
+                },
+                {   "name": "4.301 Introduction to Visual Arts", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.301"
                 },
                 {   "name": "4.302 Foundations in the Visual Arts and Design for Majors", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=4.302"
@@ -656,40 +656,37 @@
                 {   "name": "4.322 Introduction to Three-Dimensional Art Work", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=4.322"
                 },
-                {   "name": "4.112 Architecture Design Fundamentals I", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.112"
+                {   "name": "4.430 Daylighting", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.430"
                 },
-                {   "name": "4.113 Architecture Design Fundamentals II", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.113"
+                {   "name": "4.500 Introduction to Design Computing", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.500"
+                },
+                {   "name": "4.501 Digital Design and Fabrication", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=4.501"
                 }
             ]
         },
         {
             "name": "Course 22", "pop": 23,
             "children": [
+                {   "name": "22.05 Neutron Science and Reactor Physics", "pop": 4,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.05"
+                },
                 {   "name": "22.01 Introduction to Nuclear Engineering and Ionizing Radiation", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=22.01"
                 },
                 {   "name": "22.02 Introduction to Applied Nuclear Physics", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=22.02"
                 },
-                {   "name": "22.070 Materials for Nuclear Applications", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.070"
-                },
-                {   "name": "22.071J Electronics, Signals, and Measurement", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.071"
-                },
-                {
-                    "name": "22.813 Applications of Technology in Energy and the Environment", "pop": 1
-                },
                 {   "name": "22.06 Engineering of Nuclear Systems", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=22.06"
                 },
-                {   "name": "22.05 Neutron Science and Reactor Physics", "pop": 4,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.05"
+                {   "name": "22.081J Introduction to Sustainable Energy", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.081"
                 },
-                {   "name": "22.101 Applied Nuclear Physics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.101"
+                {   "name": "22.09 Principles of Nuclear Radiation Measurement and Protection", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.09"
                 },
                 {   "name": "22.011 Seminar in Nuclear Science and Engineering", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=22.011"
@@ -697,116 +694,122 @@
                 {   "name": "22.012 Seminar in Fusion and Plasma Physics", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=22.012"
                 },
-                {   "name": "22.09 Principles of Nuclear Radiation Measurement and Protection", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.09"
+                {   "name": "22.070 Materials for Nuclear Applications", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.070"
                 },
-                {   "name": "22.081J Introduction to Sustainable Energy", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.081"
+                {   "name": "22.071J Electronics, Signals, and Measurement", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.071"
+                },
+                {   "name": "22.101 Applied Nuclear Physics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=22.101"
                 },
                 {   "name": "22.811J Sustainable Energy", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=22.811"
+                },
+                {
+                    "name": "22.813 Applications of Technology in Energy and the Environment", "pop": 1
                 }
             ]
         },
         {
             "name": "Course 3", "pop": 20,
             "children": [
-                {   "name": "3.034 Organic and Biomaterials Chemistry", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.034"
-                },
-                {   "name": "3.003 Principles of Engineering Practice", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.003"
+                {   "name": "3.080 Economic and Environmental Materials Selection", "pop": 4,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.080"
                 },
                 {   "name": "3.014 Materials Laboratory", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=3.014"
                 },
-                {   "name": "3.021 Introduction to Modeling and Simulation", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.021"
-                },
-                {   "name": "3.054 Cellular Solids: Structure, Properties, Applications", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.054"
-                },
                 {   "name": "3.012 Fundamentals of Materials Science and Engineering", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=3.012"
-                },
-                {   "name": "3.080 Economic and Environmental Materials Selection", "pop": 4,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.080"
-                },
-                {   "name": "3.370 Manufacturing and Use of Structural Materials", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.370"
                 },
                 {   "name": "3.022 Microstructural Evolution in Materials", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=3.022"
                 },
-                {   "name": "3.371J Materials Manufacturing", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.371"
+                {   "name": "3.370 Manufacturing and Use of Structural Materials", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.370"
+                },
+                {   "name": "3.003 Principles of Engineering Practice", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.003"
+                },
+                {   "name": "3.021 Introduction to Modeling and Simulation", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.021"
                 },
                 {   "name": "3.024 Electronic, Optical and Magnetic Properties of Materials", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=3.024"
                 },
                 {   "name": "3.032 Mechanical Behavior of Materials", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=3.032"
+                },
+                {   "name": "3.034 Organic and Biomaterials Chemistry", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.034"
+                },
+                {   "name": "3.054 Cellular Solids: Structure, Properties, Applications", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.054"
+                },
+                {   "name": "3.371J Materials Manufacturing", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=3.371"
                 }
             ]
         },
         {
             "name": "Course 16", "pop": 19,
             "children": [
-                {   "name": "16.07 Dynamics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.07"
+                {   "name": "16.682 Selected Topics in Aeronautics and Astronautics", "pop": 7,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.682"
                 },
                 {   "name": "16.06 Principles of Automatic Control", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=16.06"
                 },
-                {   "name": "16.682 Selected Topics in Aeronautics and Astronautics", "pop": 7,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.682"
+                {   "name": "16.400 Human Factors Engineering", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.400"
                 },
-                {   "name": "16.110 Flight Vehicle Aerodynamics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.110"
-                },
-                {   "name": "16.50 Introduction to Propulsion Systems", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.50"
+                {   "name": "16.07 Dynamics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.07"
                 },
                 {   "name": "16.100 Aerodynamics", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=16.100"
                 },
-                {   "name": "16.400 Human Factors Engineering", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.400"
-                },
-                {   "name": "16.511 Aircraft Engines and Gas Turbines", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.511"
-                },
-                {   "name": "16.82 Flight Vehicle Engineering", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.82"
+                {   "name": "16.110 Flight Vehicle Aerodynamics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.110"
                 },
                 {   "name": "16.410 Principles of Autonomy and Decision Making", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=16.410"
                 },
+                {   "name": "16.50 Introduction to Propulsion Systems", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.50"
+                },
+                {   "name": "16.511 Aircraft Engines and Gas Turbines", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.511"
+                },
                 {   "name": "16.681 Topics in Aeronautics and Astronautics", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=16.681"
+                },
+                {   "name": "16.82 Flight Vehicle Engineering", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=16.82"
                 }
             ]
         },
         {
             "name": "Course 5", "pop": 16,
             "children": [
-                {   "name": "5.12 Organic Chemistry I", "pop": 3,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=5.12"
-                },
-                {   "name": "5.07J Biological Chemistry I", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=5.07"
-                },
-                {   "name": "5.60 Thermodynamics and Kinetics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=5.60"
-                },
                 {   "name": "5.310 Laboratory Chemistry", "pop": 6,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=5.310"
+                },
+                {   "name": "5.12 Organic Chemistry I", "pop": 3,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=5.12"
                 },
                 {   "name": "5.92J Projects in Energy", "pop": 3,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=5.92"
                 },
+                {   "name": "5.07J Biological Chemistry I", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=5.07"
+                },
                 {   "name": "5.13 Organic Chemistry II", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=5.13"
+                },
+                {   "name": "5.60 Thermodynamics and Kinetics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=5.60"
                 }
             ]
         },
@@ -819,11 +822,11 @@
                 {   "name": "8.03 Physics III", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=8.03"
                 },
-                {   "name": "8.282J Introduction to Astronomy", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=8.282"
-                },
                 {   "name": "8.226 Forty-three Orders of Magnitude", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=8.226"
+                },
+                {   "name": "8.282J Introduction to Astronomy", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=8.282"
                 }
             ]
         },
@@ -835,20 +838,6 @@
                 },
                 {   "name": "7.20J Human Physiology", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=7.20"
-                }
-            ]
-        },
-        {
-            "name": "Course 14", "pop": 5,
-            "children": [
-                {   "name": "14.01 Principles of Microeconomics", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=14.01"
-                },
-                {   "name": "14.43J Energy Decisions, Markets, and Policies", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=14.43"
-                },
-                {   "name": "14.30 Introduction to Statistical Method in Economics", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=14.30"
                 }
             ]
         },
@@ -866,14 +855,28 @@
         {
             "name": "Course 10", "pop": 5,
             "children": [
-                {   "name": "10.27 Energy Engineering Projects Laboratory", "pop": 2,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=10.27"
-                },
                 {   "name": "10.191J Projects in Energy", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=10.191"
                 },
+                {   "name": "10.27 Energy Engineering Projects Laboratory", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=10.27"
+                },
                 {   "name": "10.702J Introduction to Experimental Biology and Communication", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=10.702"
+                }
+            ]
+        },
+        {
+            "name": "Course 14", "pop": 5,
+            "children": [
+                {   "name": "14.30 Introduction to Statistical Method in Economics", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=14.30"
+                },
+                {   "name": "14.43J Energy Decisions, Markets, and Policies", "pop": 2,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=14.43"
+                },
+                {   "name": "14.01 Principles of Microeconomics", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=14.01"
                 }
             ]
         },
@@ -883,14 +886,14 @@
                 {   "name": "MAS.863J How to Make (Almost) Anything", "pop": 2,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=MAS.863"
                 },
+                {   "name": "MAS.110 Fundamentals of Computational Media Design", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=MAS.110"
+                },
                 {   "name": "MAS.552J New Urban Village: Mobility-on-Demand", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=MAS.552"
                 },
                 {   "name": "MAS.714J Technologies for Creative Learning", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=MAS.714"
-                },
-                {   "name": "MAS.110 Fundamentals of Computational Media Design", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=MAS.110"
                 }
             ]
         },
@@ -914,18 +917,18 @@
             ]
         },
         {
-            "name": "EC", "pop": 1,
-            "children": [
-                {   "name": "EC.711 D-Lab: Energy", "pop": 1,
-                    "url": "http://student.mit.edu/catalog/search.cgi?search=EC.711"
-                }
-            ]
-        },
-        {
             "name": "Course 24", "pop": 1,
             "children": [
                 {   "name": "24.114J A Philosophical History of Energy", "pop": 1,
                     "url": "http://student.mit.edu/catalog/search.cgi?search=24.114"
+                }
+            ]
+        },
+        {
+            "name": "EC", "pop": 1,
+            "children": [
+                {   "name": "EC.711 D-Lab: Energy", "pop": 1,
+                    "url": "http://student.mit.edu/catalog/search.cgi?search=EC.711"
                 }
             ]
         }

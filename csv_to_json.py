@@ -77,7 +77,7 @@ with open('conc clean.csv', 'rb') as csvfile:
 		## website
 		if newURL:  # First time? Attach the URL and print it for sanity-checking
 			num_['url'] = newURL
-			print 'For '+classname+', the URL is\t'+newURL.split('http://')[1]
+			#print 'For '+classname+', the URL is\t'+newURL.split('http://')[1]
 
 # Turn that big dictionary into JSON
 output =  json.dumps(Data, sort_keys=False,indent=4, separators=(',', ': '))
