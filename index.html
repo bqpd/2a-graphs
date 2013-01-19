@@ -1,4 +1,4 @@
-<head>
+<head><meta charset="utf-8">
   <title>2A concentration data</title>
   <link rel="icon" type="image/png" href="icon.png">
   <style>
@@ -22,6 +22,22 @@ body {
   line-height: 1.4em;
 }
 
+.tip {
+  z-index:1000;
+  text-align:left;
+          border-radius: 0 1em 1em 1em;
+     -moz-border-radius: 0 1em 1em 1em;
+  -webkit-border-radius: 0 1em 1em 1em;
+  padding:  0.2em 0.6em 0.15em 0.5em;
+  max-width:  500px;
+  color:  #e3dada;
+  background-color:  #666;
+  font-size:  0.8em;
+  -webkit-box-shadow: 1px 1px 2px 1px #555;
+     -moz-box-shadow: 1px 1px 2px 1px #555;
+          box-shadow: 1px 1px 2px 1px #555;
+}
+
 form {
   margin: 0.4em 0;
   padding: 0;
@@ -40,7 +56,7 @@ h1 {
   </style>
 </head>
 
-<body><!DOCTYPE html><meta charset="utf-8">
+<body><!DOCTYPE html>
 
   <div id="title">
     <h1>what 2A is made of.</h1>
@@ -49,10 +65,28 @@ h1 {
           <label><input type="radio" name="mode" id="pop" value="pop" checked> all classes, weighted by popularity</label><br>
           <label><input type="radio" name="mode" value="unique"> classes with only 1 or 2 people</label>
         </form>
-      <i> mouseover to show courses <br> and class numbers</i>
+      <i>mouseover for descriptions <br> click for subject listing</i>
   </div>
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.poshytip.min.js"></script>
+  <script type="text/javascript" >
+// Set up nice tooltips
+$(function(){
+  $('a').poshytip({
+    className: 'tip',
+    followCursor: true,
+    slide: false,
+    showTimeout: 5,
+    showAniDuration: 245,
+    hideTimeout: 10,
+    hideAniDuration: 365,
+    alignX: 'right',
+    alignY: 'bottom',
+    offsetX: 20,
+    offsetY: 40
+  });
+});
 
 // Don't let the browser stick the radio button on reload
 document.getElementById("pop").checked = true;
@@ -126,7 +160,7 @@ d3.json("2a_concentration.json", function(error, root) {
     path
         .data(partition.value(value).nodes)
       .transition()
-        .duration(1500)
+        .duration(1250)
         .attrTween("d", arcTween);
   });
 });
