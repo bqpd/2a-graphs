@@ -17,14 +17,12 @@ still done by hand
 todo
 -----
 - cleanup and comment the javascript
-- using jQuery, 
-  - clean up tooltips with [Poshy Tip](http://vadikom.com/demos/poshytip/#download)
-  - add a multiple select widget to let people choose which departments they want to see 
-    - useful for 2A students
-    - d.value = d.pop * d.weight
-    - jQuery multiple select resources: [get selection](http://stackoverflow.com/questions/2290181/jquery-multiple-select-options) | [quite functional widget](http://www.erichynds.com/jquery/jquery-ui-multiselect-widget)
+- add a multiple select widget to let people choose which departments they want to see 
+	- useful for 2A students
+	- d.value = d.pop * d.weight
+	- jQuery multiple select resources: [get selection](http://stackoverflow.com/questions/2290181/jquery-multiple-select-options) | [quite functional widget](http://www.erichynds.com/jquery/jquery-ui-multiselect-widget)
 - make it a meteor app, and show what the last twentyorso people moused over
-  - should work well with animations?
+ 	- should work well with animations?
 
 notes
 ------
