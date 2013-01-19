@@ -25,10 +25,10 @@ body {
 .tip {
   z-index:1000;
   text-align:left;
-          border-radius: 0 1em 1em 1em;
-     -moz-border-radius: 0 1em 1em 1em;
-  -webkit-border-radius: 0 1em 1em 1em;
-  padding:  0.2em 0.6em 0.15em 0.5em;
+          border-radius: 0 0.5em 0.5em 1em;
+     -moz-border-radius: 0 0.5em 0.5em 1em;
+  -webkit-border-radius: 0 0.5em 0.5em 1em;
+  padding:  0.2em 0.3em 0.15em 0.6em;
   max-width:  500px;
   color:  #e3dada;
   background-color:  #666;
@@ -36,6 +36,12 @@ body {
   -webkit-box-shadow: 1px 1px 2px 1px #555;
      -moz-box-shadow: 1px 1px 2px 1px #555;
           box-shadow: 1px 1px 2px 1px #555;
+}
+
+.arc {
+  stroke: #d3cccc;
+  stroke-width: 1.5;
+  fill-rule: evenodd;
 }
 
 form {
@@ -113,8 +119,8 @@ d3.json("2a_concentration.json", function(error, root) {
       .data(partition.nodes)  
     .enter()
       .append("svg:a")
-        .attr('xlink:href',  function(d) { return d.url ? d.url : null; })
         .attr('xlink:title', function(d) { return d.name; })
+        .attr('xlink:href',  function(d) { return d.url ? d.url : null; })
       .append("path")
       .on("mouseover", function(d) {
         d3.select(this).transition()
@@ -130,10 +136,8 @@ d3.json("2a_concentration.json", function(error, root) {
                       .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );   })
       .attr("display", function(d) { return d.depth ? null : "none"; }) // hide inner ring
       .attr("d", arc)
-      .style("stroke", "#d3cccc")
-      .style("stroke-width",1.5)
+      .classed("arc",true)
       .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
-      .style("fill-rule", "evenodd")
       .each(stash);
 
   d3.selectAll("input").on("change", function change() {
