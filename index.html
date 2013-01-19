@@ -65,7 +65,7 @@ h1 {
           <label><input type="radio" name="mode" id="pop" value="pop" checked> all classes, weighted by popularity</label><br>
           <label><input type="radio" name="mode" value="unique"> classes with only 1 or 2 people</label>
         </form>
-      <i>mouseover for descriptions <br> click for subject listing</i>
+      <a title="test"><i>mouseover for descriptions <br> click for subject listing</i></a>
   </div>
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -170,7 +170,6 @@ d3.select(self.frameElement).style("height", height + "px");
 
 // Set up nice tooltips
 $(function(){
-  console.log('found one');
   $('a').poshytip({
     className: 'tip',
     followCursor: true,
