@@ -71,22 +71,6 @@ h1 {
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.poshytip.min.js"></script>
   <script type="text/javascript" >
-// Set up nice tooltips
-$(function(){
-  $('a').poshytip({
-    className: 'tip',
-    followCursor: true,
-    slide: false,
-    showTimeout: 5,
-    showAniDuration: 245,
-    hideTimeout: 10,
-    hideAniDuration: 365,
-    alignX: 'right',
-    alignY: 'bottom',
-    offsetX: 20,
-    offsetY: 40
-  });
-});
 
 // Don't let the browser stick the radio button on reload
 document.getElementById("pop").checked = true;
@@ -184,5 +168,22 @@ function arcTween(a) {
 
 d3.select(self.frameElement).style("height", height + "px");
 
+// Set up nice tooltips
+$(function(){
+  console.log('found one');
+  $('a').poshytip({
+    className: 'tip',
+    followCursor: true,
+    slide: false,
+    showTimeout: 5,
+    showAniDuration: 245,
+    hideTimeout: 10,
+    hideAniDuration: 365,
+    alignX: 'right',
+    alignY: 'bottom',
+    offsetX: 20,
+    offsetY: 40
+  });
+});
   </script>
 </body>
