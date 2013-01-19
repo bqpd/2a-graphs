@@ -167,23 +167,26 @@ function arcTween(a) {
 }
 
 d3.select(self.frameElement).style("height", height + "px");
-</script>
-<script>
-// Set up nice tooltips
-$(function(){
-  $('a').poshytip({
-    className: 'tip',
-    followCursor: true,
-    slide: false,
-    showTimeout: 5,
-    showAniDuration: 245,
-    hideTimeout: 10,
-    hideAniDuration: 365,
-    alignX: 'right',
-    alignY: 'bottom',
-    offsetX: 20,
-    offsetY: 40
-  });
-});
+
+
+
+// Wait a bit, then set up nice tooltips
+$(setTimeout(
+  function(){
+    $('a').poshytip({
+      className: 'tip',
+      followCursor: true,
+      slide: false,
+      showTimeout: 5,
+      showAniDuration: 245,
+      hideTimeout: 10,
+      hideAniDuration: 365,
+      alignX: 'right',
+      alignY: 'bottom',
+      offsetX: 20,
+      offsetY: 40
+    });}
+  , 1000)
+);
   </script>
 </body>
