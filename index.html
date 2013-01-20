@@ -125,12 +125,14 @@ d3.json("2a_concentration.json", function(error, root) {
       .on("mouseover", function(d) {
         d3.select(this).transition()
            .duration(250)
+           .ease("circle")
            .attr("d", arc
               .innerRadius(function(d) { return Math.sqrt(Math.max(d.y - 0.1*d.dy*Math.pow(d.dx,-0.5),d.y-d.dy/1.2)); })
               .outerRadius(function(d) { return Math.sqrt(d.y + d.dy*2); })  );   })
       .on("mouseout", function(d) {
         d3.select(this).transition()
            .duration(375)
+           .ease("circle")
            .attr("d", arc
                       .innerRadius(function(d) { return Math.sqrt(d.y); })
                       .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );   })

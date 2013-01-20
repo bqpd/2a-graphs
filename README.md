@@ -26,6 +26,7 @@ todo
 
 notes
 ------
-there are two basic sorts:
+there are three basic sorts:
 - by number of people in a class
 - by department
+- by the concentration group
