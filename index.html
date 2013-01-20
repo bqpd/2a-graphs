@@ -40,7 +40,7 @@ body {
 
 .arc {
   stroke: #d3cccc;
-  stroke-width: 1.5;
+  stroke-width: .5;
   fill-rule: evenodd;
 }
 
@@ -52,7 +52,7 @@ form {
 h1 {
   margin: 0;
   line-height: 1em;
-  font-size: 1.8em;
+  font-size: 1.88em;
 }
 
   </style>
@@ -62,12 +62,12 @@ h1 {
 
   <div id="title">
     <h1>what do 2A students pick for their classes?</h1>
-      concentrations submitted as of Oct. 2012
+      current concentrations as of Oct. 2012
         <form>
           <label><input type="radio" name="mode" id="pop" value="pop" checked> all classes, sized by popularity</label><br>
-          <label><input type="radio" name="mode" value="unique"> classes picked by only 1 or 2 people</label>
+          <label><input type="radio" name="mode" value="unique"> classes picked by only 1 or 2 students</label>
         </form>
-      <i>mouseover for descriptions <br> click for subject listing</i>
+      <i>mouseover for descriptions <br> click for course catalog</i>
   </div>
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -89,7 +89,7 @@ var width = window.innerWidth,
     color = d3.scale.ordinal().range(colors);
 
 // Resize text based on SVG size
-document.getElementById("title").style.fontSize = (height/659)+'em';
+document.getElementById("title").style.fontSize = (height/700)+'em';
 document.getElementById("title").style.left = (width/2)+'px';
 document.getElementById("title").style.top = (height/2)+'px';
 
