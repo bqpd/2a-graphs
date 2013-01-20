@@ -40,8 +40,14 @@ body {
 
 .arc {
   stroke: #d3cccc;
-  stroke-width: .5;
+  stroke-opacity: 0.8;
+  stroke-width: 0.8;
   fill-rule: evenodd;
+}
+
+.course {
+  stroke-width: 1.6;
+  stroke-opacity: 0.8;
 }
 
 form {
@@ -135,6 +141,7 @@ d3.json("2a_concentration.json", function(error, root) {
       .attr("display", function(d) { return d.depth ? null : "none"; }) // hide inner ring
       .attr("d", arc)
       .classed("arc",true)
+      .classed("course",function(d) { return d.children ? true : false; })
       .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
       .each(stash);
 
