@@ -39,7 +39,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 1209,
+				"buffer_size": 1240,
 				"line_ending": "Windows"
 			}
 		},
@@ -47,7 +47,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5536,
+				"buffer_size": 5597,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,7 +55,7 @@
 			"file": "jquip.js",
 			"settings":
 			{
-				"buffer_size": 34310,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -130,6 +130,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scale",
 			"resize",
 			"e.resize",
 			"resize",
@@ -337,7 +338,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -345,15 +346,15 @@
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 1209,
+						"buffer_size": 1240,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								168,
-								168
+								1119,
+								605
 							]
 						],
 						"settings":
@@ -371,15 +372,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 5536,
+						"buffer_size": 5597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2748,
-								2245
+								4008,
+								4008
 							]
 						],
 						"settings":
@@ -389,7 +390,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1290.0,
+						"translation.y": 1805.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -399,15 +400,15 @@
 					"file": "jquip.js",
 					"settings":
 					{
-						"buffer_size": 34310,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28244,
-								28251
+								0,
+								0
 							]
 						],
 						"settings":
