@@ -18,7 +18,7 @@ body {
   position: absolute;
   margin: -3em 0 0 -10em;
   width: 20em;
-  height: 6em;
+  height: 0em;
   text-align: center;
   line-height: 1.4em;
 }
@@ -41,13 +41,15 @@ body {
 
 .arc {
   stroke: #333;
-  stroke-opacity: 0.8;
-  stroke-width: 0.8;
+  stroke-width: 1;
+  stroke-opacity: 0.5;
   fill-rule: evenodd;
 }
 
 .course {
   stroke: #d3cccc;
+  stroke-width: 3;
+  stroke-opacity: 0.4;
 }
 
 form {
@@ -61,11 +63,21 @@ h1 {
   font-size: 1.88em;
 }
 
+form {
+  padding: 0;
+  margin: 0;
+}
+
 #deps {
+  border: 0;
+  background: none;
   font-family: inherit;
   width:  15em;
-  font-size: inherit;
-  margin: 0 0 0 0;
+  font-size: 0.75em;
+  margin: 0;
+  width: 20em;
+  height: 2.8em;
+  text-align: center;
 }
 
   </style>
@@ -79,18 +91,17 @@ h1 {
       <br>
       <strong> showing the following courses: </strong>
         <form>
-          <input type="text" name="deps" id="deps" value="1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,18,20,22,24,ESD,SP,MAS,EC"
-          onkeypress="return event.keyCode != 13;">
+          <textarea name="deps" id="deps" value="1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,18,20,22,24,ESD,SP,MAS,EC"
+          onkeypress="return event.keyCode != 13;"></textarea>
         </form>
-      <i> mouseover for descriptions <br> click for more detail </i>
+      <i> edit the list to change courses <br> click on a course to zoom in <br> click the center to reset</i>
   </div>
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">f8iz
-  </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.poshytip.min.js"></script>
   <script type="text/javascript" >
 
-var alldeps = '1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,18,20,22,24,ESD,SP,MAS,EC';
+var alldeps = '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 20, 22, 24, ESD, SP, MAS, EC';
 $('#deps').val(alldeps);
 // A 24-shaded rainbow made by rotating hue while keeping saturation and value constant
 var hslString = function(hue) { return d3.hsl(hue,0.45,0.5); },
@@ -149,13 +160,15 @@ d3.json("2a_concentration.json", function(error, root) {
                       .innerRadius(function(d) { return Math.sqrt(d.y); })
                       .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );   })
       .attr("d", arc)
-      .classed("arc",function(d) { return d.depth ? true : false; })
+      .classed("arc",true)
       .classed("course",function(d) { return d.children ? true : false; })
       .style("fill", function(d) { return d.depth ? color((d.children ? d : d.parent).name) : d3.rgb("#d3cccc"); })
       .each(stash);
 
   d3.selectAll(".course").on("mousedown", function(d) {
-    $('#deps').val(d.id);
+    if (d.id == null) { dep = alldeps; }
+    else { dep = d.id; }
+    $('#deps').val(dep);
     var value = function(d) { 
       if (!($('#deps').val())) { $('#deps').val(alldeps); }
       deps = $('#deps').val().split(',');
@@ -174,9 +187,9 @@ d3.json("2a_concentration.json", function(error, root) {
         .attrTween("d", arcTween);
   });
 
-  d3.selectAll("input").on("keyup", function change() {
+  d3.selectAll("#deps").on("keyup", function change() {
     var value = function(d) { 
-      if (!($('#deps').val())) { $('#deps').val(alldeps); }
+      //if (!($('#deps').val())) { $('#deps').val(alldeps); }
       deps = $('#deps').val().split(',');
       for (var i = deps.length - 1; i >= 0; i--) {
         deps[i] = deps[i].replace(/\W/g,'');
