@@ -47,16 +47,24 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5597,
-				"line_ending": "Windows"
+				"buffer_size": 5751,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "jquip.js",
+			"file": "csv_to_json.py",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
+				"buffer_size": 4423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "2a_concentration.json",
+			"settings":
+			{
+				"buffer_size": 51999,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -84,6 +92,9 @@
 	},
 	"file_history":
 	[
+		"/home/macx/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/macx/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/macx/projects/2a-graphs/jquip.js",
 		"/C/Users/pearl/git/2a-graphs/jquery-1.4.2.min.js",
 		"/C/Users/pearl/git/2a-graphs/jquery.poshytip.min.js",
 		"/C/Users/pearl/git/2a-graphs/jquip.q-min.js",
@@ -338,7 +349,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -372,35 +383,7 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 5597,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4008,
-								4008
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1805.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "jquip.js",
-					"settings":
-					{
-						"buffer_size": 0,
+						"buffer_size": 5751,
 						"regions":
 						{
 						},
@@ -413,8 +396,63 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1872.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "csv_to_json.py",
+					"settings":
+					{
+						"buffer_size": 4423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2513,
+								2513
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 526.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "2a_concentration.json",
+					"settings":
+					{
+						"buffer_size": 51999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,

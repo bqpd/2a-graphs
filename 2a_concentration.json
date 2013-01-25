@@ -2,6 +2,7 @@
     "name": "2A Concentration Classes",
     "children": [
         {
+            "id": "2",
             "name": "Course 2", "pop": 460,
             "children": [
                 {   "name": "2.96 Management in Engineering", "pop": 38,
@@ -190,6 +191,7 @@
             ]
         },
         {
+            "id": "6",
             "name": "Course 6", "pop": 258,
             "children": [
                 {   "name": "6.002 Circuits and Electronics", "pop": 38,
@@ -315,6 +317,7 @@
             ]
         },
         {
+            "id": "15",
             "name": "Course 15", "pop": 165,
             "children": [
                 {   "name": "15.501 Corporate  Financial Accounting", "pop": 37,
@@ -416,6 +419,7 @@
             ]
         },
         {
+            "id": "1",
             "name": "Course 1", "pop": 65,
             "children": [
                 {   "name": "1.040 Project Management", "pop": 12,
@@ -502,6 +506,7 @@
             ]
         },
         {
+            "id": "18",
             "name": "Course 18", "pop": 39,
             "children": [
                 {   "name": "18.440 Probability and Random Variables", "pop": 18,
@@ -531,6 +536,7 @@
             ]
         },
         {
+            "id": "ESD",
             "name": "ESD", "pop": 33,
             "children": [
                 {   "name": "ESD.051J Engineering Innovation and Design", "pop": 22,
@@ -557,6 +563,7 @@
             ]
         },
         {
+            "id": "20",
             "name": "Course 20", "pop": 28,
             "children": [
                 {   "name": "20.110J Thermodynamics of Biomolecular Systems", "pop": 6,
@@ -601,6 +608,7 @@
             ]
         },
         {
+            "id": "SP",
             "name": "SP", "pop": 26,
             "children": [
                 {
@@ -627,6 +635,7 @@
             ]
         },
         {
+            "id": "4",
             "name": "Course 4", "pop": 24,
             "children": [
                 {   "name": "4.111 Introduction to Architecture and Environmental Design", "pop": 6,
@@ -668,6 +677,7 @@
             ]
         },
         {
+            "id": "22",
             "name": "Course 22", "pop": 23,
             "children": [
                 {   "name": "22.05 Neutron Science and Reactor Physics", "pop": 4,
@@ -712,6 +722,7 @@
             ]
         },
         {
+            "id": "3",
             "name": "Course 3", "pop": 20,
             "children": [
                 {   "name": "3.080 Economic and Environmental Materials Selection", "pop": 4,
@@ -753,6 +764,7 @@
             ]
         },
         {
+            "id": "16",
             "name": "Course 16", "pop": 19,
             "children": [
                 {   "name": "16.682 Selected Topics in Aeronautics and Astronautics", "pop": 7,
@@ -791,6 +803,7 @@
             ]
         },
         {
+            "id": "5",
             "name": "Course 5", "pop": 16,
             "children": [
                 {   "name": "5.310 Laboratory Chemistry", "pop": 6,
@@ -814,6 +827,7 @@
             ]
         },
         {
+            "id": "8",
             "name": "Course 8", "pop": 8,
             "children": [
                 {   "name": "8.21 Physics of Energy", "pop": 5,
@@ -831,6 +845,7 @@
             ]
         },
         {
+            "id": "7",
             "name": "Course 7", "pop": 6,
             "children": [
                 {   "name": "7.02J Introduction to Experimental Biology and Communication", "pop": 5,
@@ -842,6 +857,7 @@
             ]
         },
         {
+            "id": "12",
             "name": "Course 12", "pop": 5,
             "children": [
                 {   "name": "12.021 Earth Science, Energy, and the Environment", "pop": 4,
@@ -853,6 +869,7 @@
             ]
         },
         {
+            "id": "10",
             "name": "Course 10", "pop": 5,
             "children": [
                 {   "name": "10.191J Projects in Energy", "pop": 2,
@@ -867,6 +884,7 @@
             ]
         },
         {
+            "id": "14",
             "name": "Course 14", "pop": 5,
             "children": [
                 {   "name": "14.30 Introduction to Statistical Method in Economics", "pop": 2,
@@ -881,6 +899,7 @@
             ]
         },
         {
+            "id": "MAS",
             "name": "MAS", "pop": 5,
             "children": [
                 {   "name": "MAS.863J How to Make (Almost) Anything", "pop": 2,
@@ -898,6 +917,7 @@
             ]
         },
         {
+            "id": "11",
             "name": "Course 11", "pop": 4,
             "children": [
                 {   "name": "11.025J D-Lab: Development", "pop": 3,
@@ -909,6 +929,7 @@
             ]
         },
         {
+            "id": "9",
             "name": "Course 9", "pop": 2,
             "children": [
                 {   "name": "9.34J Sensory and Social Orders", "pop": 2,
@@ -917,6 +938,7 @@
             ]
         },
         {
+            "id": "24",
             "name": "Course 24", "pop": 1,
             "children": [
                 {   "name": "24.114J A Philosophical History of Energy", "pop": 1,
@@ -925,6 +947,7 @@
             ]
         },
         {
+            "id": "EC",
             "name": "EC", "pop": 1,
             "children": [
                 {   "name": "EC.711 D-Lab: Energy", "pop": 1,

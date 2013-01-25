@@ -1,5 +1,4 @@
 import csv, json, codecs, urllib2, re
-from bs4 import BeautifulSoup as bs
 
 Data = {'name':'2A Concentration Classes', 'children': []}		# Initialize JSON structure
 ClassDescs = {
@@ -44,10 +43,10 @@ with open('conc clean.csv', 'rb') as csvfile:
 		####################################
 		# What department is the class in? #
 		####################################
-		dep = classname.split('.')[0]
+		dep_id = classname.split('.')[0]
 		# If it's just a number, spice it up a bit
-		try: 				dep = "Course " + str(int(dep))
-		except ValueError:	pass
+		try: 				dep = "Course " + str(int(dep_id))
+		except ValueError:	dep = dep_id
 		###################################
 		# What's the class's description? #
 		###################################
@@ -56,10 +55,9 @@ with open('conc clean.csv', 'rb') as csvfile:
 		except KeyError: # If not,
 			try:	# Is the class description available from the course catalog?
 				newURL = 'http://student.mit.edu/catalog/search.cgi?search='+classname  # craft URL
-				soup = bs(urllib2.urlopen(newURL).read())  # load the search in the course catalog
+				soup = urllib2.urlopen(newURL).read()  # load the search in the course catalog
 				classname_re = re.compile('\.').sub('\\.',classname)  # escape the period in the classname
-				classdesc = re.compile(classname_re+'.*\n').findall(str(soup.h3))[0]  # find the classname
-				classdesc = re.compile('\n').sub('',classdesc)  # remove the newline from results
+				classdesc = re.compile('<h3>.*?('+classname_re+'.*)\n').findall(soup)[0]  # find the classname
 				ClassDescs[classname] = classdesc  # save it to our descriptions dictionary
 			except IndexError:	# If it isn't, get a human to find it (and use the class's number for now)
 				ClassDescs[classname] = classdesc = classname
@@ -70,6 +68,7 @@ with open('conc clean.csv', 'rb') as csvfile:
 		#####################################
 		## department name
 		dep_ = lookForNode(dep,Data,children=True)	# Find the department's resource in the structure
+		dep_['id'] = dep_id
 		increaseStat(dep_,'pop')					# One more person for this department
 		## class description
 		num_ = lookForNode(classdesc,dep_,children=False)	# Find the class's resource in the department
