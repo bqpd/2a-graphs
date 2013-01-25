@@ -4,16 +4,20 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-align"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
 				"text-d",
 				"text-indent"
 			],
 			[
 				"font-",
 				"font-weight"
-			],
-			[
-				"for",
-				"for	for (…) {…}"
 			],
 			[
 				"classde",
@@ -39,7 +43,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 1240,
+				"buffer_size": 906,
 				"line_ending": "Windows"
 			}
 		},
@@ -47,7 +51,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5751,
+				"buffer_size": 6954,
 				"line_ending": "Unix"
 			}
 		},
@@ -55,7 +59,7 @@
 			"file": "csv_to_json.py",
 			"settings":
 			{
-				"buffer_size": 4423,
+				"buffer_size": 4337,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +67,7 @@
 			"file": "2a_concentration.json",
 			"settings":
 			{
-				"buffer_size": 51999,
+				"buffer_size": 52544,
 				"line_ending": "Unix"
 			}
 		}
@@ -141,6 +145,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			",",
+			"yes",
 			"scale",
 			"resize",
 			"e.resize",
@@ -266,15 +272,15 @@
 			"b",
 			",",
 			"\"",
-			"\"NULL\",",
-			"\\n"
+			"\"NULL\","
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": true,
 		"replace_history":
 		[
+			", ",
 			"jquip",
 			"1",
 			"0.75em",
@@ -349,7 +355,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -357,15 +363,15 @@
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 1240,
+						"buffer_size": 906,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1119,
-								605
+								277,
+								277
 							]
 						],
 						"settings":
@@ -383,15 +389,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 5751,
+						"buffer_size": 6954,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2865,
+								2865
 							]
 						],
 						"settings":
@@ -401,7 +407,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1872.0,
+						"translation.y": 890.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -411,15 +417,15 @@
 					"file": "csv_to_json.py",
 					"settings":
 					{
-						"buffer_size": 4423,
+						"buffer_size": 4337,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2513,
-								2513
+								2740,
+								2740
 							]
 						],
 						"settings":
@@ -428,7 +434,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 526.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -438,15 +444,15 @@
 					"file": "2a_concentration.json",
 					"settings":
 					{
-						"buffer_size": 51999,
+						"buffer_size": 52544,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								37202,
+								37202
 							]
 						],
 						"settings":
@@ -456,7 +462,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7754.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

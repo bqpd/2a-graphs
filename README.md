@@ -3,7 +3,7 @@
 
 A [sunburst representation](http://bl.ocks.org/4063423) of the variety of 2A concentrations at MIT. [See it here](http://web.mit.edu/eburn/www/2a)
 
-Requires [BeautifulSoup](www.crummy.com/software/BeautifulSoup/) for scraping and [d3](https://github.com/mbostock/d3/wiki) for the visualization.
+Requires [d3](https://github.com/mbostock/d3/wiki) for the visualization, and jQuery for some odds and ends.
 
 toolchain
 ----------
