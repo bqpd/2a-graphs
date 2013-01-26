@@ -1,6 +1,6 @@
 <head><meta charset="utf-8">
-  <title>2A concentration data</title>
-  <link rel="icon" type="image/png" href="icon-v2.png">
+  <title> what's in a 2A concentration?</title>
+  <link rel="icon" type="image/png" href="icon-v6.png">
   <style>
 
 body {
@@ -16,7 +16,7 @@ body {
 
 #title {
   position: absolute;
-  margin: -3em 0 0 -10em;
+  margin: -5em 0 0 -10em;
   width: 20em;
   height: 0em;
   text-align: center;
@@ -30,7 +30,7 @@ body {
   font-style: italic;
   width: 100%;
   text-align: center;
-  margin-top: 3em;
+  margin-top: 4em;
   display: none;
 }
 
@@ -41,13 +41,10 @@ body {
      -moz-border-radius: 0 0.5em 0.5em 1em;
   -webkit-border-radius: 0 0.5em 0.5em 1em;
   padding:  0.2em 0.3em 0.15em 0.6em;
-  max-width:  500px;
+  max-width:  50em;
   color:  #e3dada;
   background-color:  #666;
   font-size:  0.8em;
-  -webkit-box-shadow: 1px 1px 2px 1px #555;
-     -moz-box-shadow: 1px 1px 2px 1px #555;
-          box-shadow: 1px 1px 2px 1px #555;
 }
 
 .tip-deps {
@@ -55,7 +52,10 @@ body {
      -moz-border-radius: 0 0 1em 1em;
           border-radius: 0 0 1em 1em;
   -webkit-border-radius: 0 0 1em 1em;
-  min-height: 5.5em;
+  height: 6em;
+    -webkit-box-shadow: 0 0.1em 0.1em 0.1em #555;
+     -moz-box-shadow: 0 0.1em 0.1em 0.1em #555;
+          box-shadow: 0 0.1em 0.1em 0.1em #555;
 }
 
 .arc {
@@ -78,8 +78,9 @@ form {
 
 h1 {
   margin: 0;
-  line-height: 1em;
-  font-size: 1.88em;
+  margin-bottom: 0.18em;
+  line-height: 0.8em;
+  font-size: 2.5em;
 }
 
 form {
@@ -90,17 +91,17 @@ form {
 #deps {
   overflow: hidden;
   border: none;
-  border-top: 1px solid #333;
+  border-top: 0.2em solid #333;
   resize:none;
   background: #666;
   font-family: inherit;
   color: #e3dada;
   width:  15em;
-  font-size: 0.75em;
+  font-size: 0.8em;
   margin: 0;
   width: 23em;
-  height: 2.8em;
-  margin-bottom: 0.7em;
+  height: 3em;
+  margin-bottom: 0.9em;
   text-align: center;
           border-radius: 0 0 1em 1em;
      -moz-border-radius: 0 0 1em 1em;
@@ -123,12 +124,12 @@ form {
 <body><!DOCTYPE html>
   <div id="reset">click the dot to reset</div>
   <div id="title">
-    <h1>what do 2A students pick for their classes?</h1>
+    <h1>what's in a 2A concentration?</h1>
       showing  <span id="percent_shown">100.0</span>% of concentration classes</strong>
         <form>
           <textarea name="deps" id="deps"  spellcheck="false" onkeypress="return event.keyCode != 13;"
                     title='<p id="course" style="margin-bottom: 0.7em"><strong><i>enter comma-separated course names         <br></strong>
-                                      (e.g., "2", "ESD", "4, 11, MAS")            </p>
+                                      (e.g., "2", "ESD", "4, mas, 11")            </p>
                             <strong>  or partial class names    <br></strong>
                                       (e.g., "2.00" will show 2.007 but not 2.72)'></textarea>
         </form>
@@ -231,8 +232,7 @@ d3.json("2a_concentration.json", function(error, root) {
       .transition()
         .duration(1250)
         .attrTween("d", arcTween).transition()
-           .duration(375)
-           .ease("circle")
+           .duration(1000)
            .attr("d", arc
                       .innerRadius(function(d) { return Math.sqrt(d.y); })
                       .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );
@@ -264,8 +264,7 @@ d3.json("2a_concentration.json", function(error, root) {
       .transition()
         .duration(1250)
         .attrTween("d", arcTween).transition()
-           .duration(375)
-           .ease("circle")
+           .duration(1000)
            .attr("d", arc
                       .innerRadius(function(d) { return Math.sqrt(d.y); })
                       .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );
@@ -299,7 +298,7 @@ $('#deps').poshytip({
   alignX: 'center',
   alignY: 'bottom',
   offsetX: 0,
-  offsetY: 13,
+  offsetY: 15,
   slide: false,
   showAniDuration: 125,
   hideAniDuration: 375
