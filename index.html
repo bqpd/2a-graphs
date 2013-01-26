@@ -133,7 +133,7 @@ form {
 
 <body><!DOCTYPE html>
   <div id="github"><a href="https://github.com/bqpd/2a-graphs" title="bqpd/2a-graphs"><img alt="link to this project on github" src="github.png" width="32px"/></a></div>
-  <div id="reset">click the dot to reset</div>
+  <div id="reset">click the dot to start</div>
   <div id="title">
     <h1>what's in a 2A concentration?</h1>
       showing  <span id="percent_shown">100.0</span>% of concentration classes</strong>
@@ -153,7 +153,7 @@ form {
 
 var percent_shown = 100;
 var alldeps = '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 20, 22, 24, ESD, SP, MAS, EC';
-$('#deps').val(alldeps);
+$('#deps').val('');
 // 24 shades  of rainbow, made by rotating hue while keeping saturation and value constant
 var hslString = function(hue) { return d3.hsl(hue,0.45,0.5); },
     colors = [];
@@ -295,7 +295,37 @@ d3.json("2a_concentration.json", function(error, root) {
       offsetY: 40
     });
 
-    $('#deps').css("display","inherit");
+    $('#deps').css("display","inherit").focus();
+
+    percent_shown = 0;
+    if (!$('#deps').val()) { setTimeout(function() {$('#reset').css("display","inherit"); }, 1500) }
+    else { $('#reset').css("display","none"); }
+
+    var value = function(d) { 
+      var mult = 0;
+      if (!d.children) {
+        deps = $('#deps').val().split(',');
+        for (var i = deps.length - 1; i >= 0; i--) {
+          dep = deps[i].replace(/ */,'').toUpperCase();
+          if (d.parent.id === dep.replace(/(\w{1,3})\..*/,'$1')) {
+            if (d.name.search(dep) === 0) { mult = 1; i = -1;}
+          }
+        }
+        percent_shown += d.pop*mult;
+        $("#percent_shown").text(percent_shown.toFixed(1));
+      }
+      return d.pop * mult; 
+    };
+
+    path
+        .data(partition.value(value).nodes)
+      .transition()
+        .duration(1250)
+        .attrTween("d", arcTween).transition()
+           .duration(1000)
+           .attr("d", arc
+                      .innerRadius(function(d) { return Math.sqrt(d.y); })
+                      .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );
 });
 
 // Stash the old values for transition.
