@@ -96,7 +96,7 @@ form {
   font-size: 0.8em;
   margin: 0 auto 0.9em auto;
   width: 23em;
-  height: 4em;
+  height: 3.1em;
   text-align: center;
           border-radius: 0 0 1em 1em;
      -moz-border-radius: 0 0 1em 1em;
@@ -305,7 +305,7 @@ d3.json("2a_concentration.json", function(error, root) {
   });
 
   d3.selectAll("#deps").on("keyup", function change() {
-    if (false == 1 + $.inArray(d3.event.key,[13,37,38,39,40])) {
+    if (false == 1 + $.inArray(d3.event.keyCode,[13,37,38,39,40])) {
       location.href = "#";
       refreshDeps();
     }
