@@ -16,14 +16,14 @@ body {
 
 #title {
   position: absolute;
-  margin: -3em 0 0 -10em;
+  margin: -5em 0 0 -10em;
   width: 20em;
   height: 0em;
   text-align: center;
   line-height: 1.4em;
 }
 
-.tip {
+.tip, .tip-deps {
   z-index:1000;
   text-align:left;
           border-radius: 0 0.5em 0.5em 1em;
@@ -37,6 +37,13 @@ body {
   -webkit-box-shadow: 1px 1px 2px 1px #555;
      -moz-box-shadow: 1px 1px 2px 1px #555;
           box-shadow: 1px 1px 2px 1px #555;
+}
+
+.tip-deps {
+  text-align: center;
+     -moz-border-radius: 0 0 1em 1em;
+          border-radius: 0 0 1em 1em;
+  -webkit-border-radius: 0 0 1em 1em;
 }
 
 .arc {
@@ -71,41 +78,49 @@ form {
 #deps {
   overflow: hidden;
   border: none;
-  background: none;
+  border-top: 1px solid #333;
+  resize:none;
+  background: #666;
   font-family: inherit;
-  color: inherit;
+  color: #e3dada;
   width:  15em;
   font-size: 0.75em;
   margin: 0;
-  width: 20em;
-  height: 3.5em;
+  width: 23em;
+  height: 2.6em;
+  margin-bottom: 0.7em;
   text-align: center;
+          border-radius: 0 0 1em 1em;
+     -moz-border-radius: 0 0 1em 1em;
+  -webkit-border-radius: 0 0 1em 1em;
 }
 
   </style>
 </head>
 
 <body><!DOCTYPE html>
-
   <div id="title">
+    <span id="reset" style="color: #d3cccc;"><i> click the dot to reset</i></span><p><p>
     <h1>what do 2A students pick for their classes?</h1>
-      all concentration classes as of Oct. 2012
-      <br>
-      <strong> showing the following courses: </strong>
+      showing  <span id="percent_shown">100.0</span>% of concentration classes</strong>
         <form>
-          <textarea name="deps" id="deps" value="1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,18,20,22,24,ESD,SP,MAS,EC"
-          onkeypress="return event.keyCode != 13;"></textarea>
+          <textarea name="deps" id="deps"  spellcheck="false" onkeypress="return event.keyCode != 13;"
+                    title='<strong><i>enter comma-separated course names         <br></strong>
+                                      (e.g., "2", "ESD", "4, 11, MAS")            <br style="margin-bottom: 0.7em;">
+                            <strong>  or partial class names    <br></strong>
+                                      (e.g., "2.00" will show 2.007 but not 2.72)'></textarea>
         </form>
-      <i> edit the list to change courses <br> click a course to zoom in <br> click the center to reset</i>
+      <i> edit the box above to filter classes <br> click a course to show it alone <br> click the center dot to reset</i>
   </div>
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.poshytip.min.js"></script>
   <script type="text/javascript" >
 
+var percent_shown = 100;
 var alldeps = '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 20, 22, 24, ESD, SP, MAS, EC';
 $('#deps').val(alldeps);
-// A 24-shaded rainbow made by rotating hue while keeping saturation and value constant
+// 24 shades  of rainbow, made by rotating hue while keeping saturation and value constant
 var hslString = function(hue) { return d3.hsl(hue,0.45,0.5); },
     colors = [];
 for (var i = 0; i < 24; i++) { colors[i] = hslString(195+i*15); };
@@ -117,7 +132,7 @@ var width = window.innerWidth,
     color = d3.scale.ordinal().range(colors);
 
 // Resize text based on SVG size
-document.getElementById("title").style.fontSize = (height/700)+'em';
+$('body').css("fontSize",(height/700)+'em');
 document.getElementById("title").style.left = (width/2)+'px';
 document.getElementById("title").style.top = (height/2)+'px';
 
@@ -143,7 +158,7 @@ d3.json("2a_concentration.json", function(error, root) {
       .data(partition.nodes)  
     .enter()
       .append("svg:a")
-        .attr('xlink:title', function(d) { return d.depth ? d.name : null; })
+        .attr('xlink:title', function(d) { return d.depth ? d.name+' ('+d.value.toFixed(1)+'%)' : null; })
         .attr('xlink:href',  function(d) { return d.url ? d.url : null; })
         .classed("tooltip",  function(d) { return d.depth ? true : false; })
       .append("path")
@@ -168,9 +183,13 @@ d3.json("2a_concentration.json", function(error, root) {
       .each(stash);
 
   d3.selectAll(".course").on("mousedown", function(d) {
+    percent_shown = 0;
+
     if (d.id == null) { dep = alldeps; }
     else { dep = d.id; }
     $('#deps').val(dep);
+    $('#reset').css("color","#d3cccc");
+
     var value = function(d) { 
       if (!($('#deps').val())) { $('#deps').val(alldeps); }
       deps = $('#deps').val().split(',');
@@ -179,6 +198,8 @@ d3.json("2a_concentration.json", function(error, root) {
       };
       id = d.children ? d.id : d.parent.id;
       mult = $.inArray(id,deps) >= 0;
+
+      percent_shown += d.pop*mult;
       return d.pop * mult;
     };
 
@@ -186,26 +207,45 @@ d3.json("2a_concentration.json", function(error, root) {
         .data(partition.value(value).nodes)
       .transition()
         .duration(1250)
-        .attrTween("d", arcTween);
+        .attrTween("d", arcTween).transition()
+           .duration(375)
+           .ease("circle")
+           .attr("d", arc
+                      .innerRadius(function(d) { return Math.sqrt(d.y); })
+                      .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );
   });
 
   d3.selectAll("#deps").on("keyup", function change() {
+    percent_shown = 0;
+    if (!$('#deps').val()) { $('#reset').css("color","#333"); }
+    else { $('#reset').css("color","#d3cccc"); }
+
     var value = function(d) { 
-      //if (!($('#deps').val())) { $('#deps').val(alldeps); }
-      deps = $('#deps').val().split(',');
-      for (var i = deps.length - 1; i >= 0; i--) {
-        deps[i] = deps[i].replace(/\W/g,'');
-      };
-      id = d.children ? d.id : d.parent.id;
-      mult = $.inArray(id,deps) >= 0;
-      return d.pop * mult;
+      var mult = 0;
+      if (!d.children) {
+        deps = $('#deps').val().split(',');
+        for (var i = deps.length - 1; i >= 0; i--) {
+          dep = deps[i].replace(/ */,'');
+          if (d.parent.id === dep.replace(/(\w{1,3})\..*/,'$1')) {
+            if (d.name.search(dep) === 0) { mult = 1; i = -1;}
+          }
+        }
+        percent_shown += d.pop*mult;
+        $("#percent_shown").text(percent_shown.toFixed(1));
+      }
+      return d.pop * mult; 
     };
 
     path
         .data(partition.value(value).nodes)
       .transition()
         .duration(1250)
-        .attrTween("d", arcTween);
+        .attrTween("d", arcTween).transition()
+           .duration(375)
+           .ease("circle")
+           .attr("d", arc
+                      .innerRadius(function(d) { return Math.sqrt(d.y); })
+                      .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );
   });
 });
 
@@ -229,6 +269,19 @@ function arcTween(a) {
 d3.select(self.frameElement).style("height", height + "px");
 
 // Wait a bit, then set up nice tooltips
+$('#deps').poshytip({
+  className: 'tip-deps',
+  showOn: 'focus',
+  alignTo: 'target',
+  alignX: 'center',
+  alignY: 'bottom',
+  offsetX: 0,
+  offsetY: 13,
+  slide: false,
+  showAniDuration: 125,
+  hideAniDuration: 375
+});
+
 $(setTimeout(
   function(){
     $('a.tooltip').poshytip({
