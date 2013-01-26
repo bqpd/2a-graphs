@@ -138,6 +138,7 @@ h1 {
   right: 1em;
   color: #d3cccc;
   text-align: right;
+  display: none;
 }
 
 a {
@@ -346,6 +347,8 @@ d3.json("2a_concentration.json", function(error, root) {
   // are we somewhere in particular?
   var hash = window.location.hash.substring(1);
   if (hash) { loadTrack(hash); }
+  $('#tracks').css("display","inherit").focus();
+  
   // update values based on textbox contents
   refreshDeps();
 });
