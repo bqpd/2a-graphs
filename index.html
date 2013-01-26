@@ -211,6 +211,7 @@ d3.json("2a_concentration.json", function(error, root) {
       mult = $.inArray(id,deps) >= 0;
 
       percent_shown += d.pop*mult;
+      $("#percent_shown").text(percent_shown.toFixed(1));
       return d.pop * mult;
     };
 
