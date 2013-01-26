@@ -279,6 +279,22 @@ d3.json("2a_concentration.json", function(error, root) {
                       .innerRadius(function(d) { return Math.sqrt(d.y); })
                       .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );
   });
+
+  $('a.tooltip').poshytip({
+      className: 'tip',
+      followCursor: true,
+      slide: false,
+      showTimeout: 5,
+      showAniDuration: 245,
+      hideTimeout: 10,
+      hideAniDuration: 365,
+      alignX: 'right',
+      alignY: 'bottom',
+      offsetX: 20,
+      offsetY: 40
+    });
+  
+    $('#deps').css("display","inherit");
 });
 
 // Stash the old values for transition.
@@ -313,25 +329,5 @@ $('#deps').poshytip({
   showAniDuration: 125,
   hideAniDuration: 375
 });
-
-$(setTimeout(
-  function(){
-    $('a.tooltip').poshytip({
-      className: 'tip',
-      followCursor: true,
-      slide: false,
-      showTimeout: 5,
-      showAniDuration: 245,
-      hideTimeout: 10,
-      hideAniDuration: 365,
-      alignX: 'right',
-      alignY: 'bottom',
-      offsetX: 20,
-      offsetY: 40
-    });
-    $('#deps').css("display","inherit");
-  }
-  , 10)
-);
   </script>
 </body>
