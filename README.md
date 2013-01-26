@@ -16,8 +16,8 @@ still done by hand
 
 todo
 -----
-- cleanup and comment the javascript
-- make it a meteor app, and show what the last twentyorso people moused over
+- cleanup and comment the css
+- make it a meteor app, and show what the last twentyorso people moused over / searched
  	- should work well with animations?
 
 notes

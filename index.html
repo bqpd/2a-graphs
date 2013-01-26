@@ -1,6 +1,10 @@
 <head><meta charset="utf-8">
+<!-- TITLE AND FAVICON =========================================================================================================-->
   <title>what's in a 2A concentration?</title>
   <link rel="icon" type="image/png" href="icon-v7.png">
+<!--============================================================================================================================-->
+<!-- CSS =======================================================================================================================-->
+<!--============================================================================================================================-->
   <style>
 
 body {
@@ -82,11 +86,6 @@ h1 {
   font-size: 2.5em;
 }
 
-form {
-  padding: 0;
-  margin: 0;
-}
-
 #deps {
   overflow: hidden;
   border: none;
@@ -149,8 +148,12 @@ a {
 </head>
 
 <body><!DOCTYPE html>
-  <div id="github"><a href="https://github.com/bqpd/2a-graphs" title="bqpd/2a-graphs"><img alt="link to this project on github" src="github.png" width="32px"/></a></div>
+<!-- BACKGROUND DIVS ==========================================================================================================-->
+  <div id="github"><a href="https://github.com/bqpd/2a-graphs" title="bqpd/2a-graphs">
+  <img alt="link to this project on github" src="github.png" width="32px"/></a></div>
+
   <div id="reset">click the dot to start</div>
+
   <div id="tracks">
     <p style="text-align: left; margin: 0 0 0.3em 0;"> concentration tracks </p>
     <a href="#all"                onclick="loadTrack('all');">                [all tracks combined]</a><br>
@@ -167,109 +170,106 @@ a {
     <a href="#energy"             onclick="loadTrack('energy');">             energy</a><br>
     <a href="#bio"                onclick="loadTrack('bio');">                bio</a>
   </div>
+<!-- CENTER DOT DIVS ====================================================================================================-->
   <div id="title">
+
     <h1>what's in a 2A concentration?</h1>
+
       showing  <span id="percent_shown">100.0</span>% of concentration classes</strong>
-        <form>
-          <textarea name="deps" id="deps"  spellcheck="false" onkeypress="return event.keyCode != 13;"
-                    title='<p id="course" style="margin-bottom: 0.7em">  <strong><i>  enter comma-separated course names 
-                                                                       <br></strong>    (e.g., "2", "ESD", "4, mas, 11")
-                                                                        </p><strong>  or filter with partial class names
-                                                                       <br></strong>    (e.g., "2.00" will show 2.007 but not 2.72)'>
-          </textarea>
-        </form>
-      <i> edit the box above to filter classes <br> click a course to show it alone <br> click the center dot to reset</i>
+
+        <textarea name="deps" id="deps"  spellcheck="false" onkeypress="return event.keyCode != 13;"
+                        title='<p id="course" style="margin-bottom: 0.7em">
+
+                            <strong><i>   enter comma-separated course names 
+                          <br></strong>     (e.g., "2", "ESD", "4, mas, 11")
+                           </p><strong>   or filter with partial class names
+                          <br></strong>     (e.g., "2.00" will show 2.007 but not 2.72)'></textarea>
+
+      <i> edit the box above to filter classes
+     <br> click a course to show it alone
+     <br> click the center dot to reset
+     </i>
   </div>
+<!--============================================================================================================================-->
+<!-- JAVASCRIPT ================================================================================================================-->
+<!--============================================================================================================================-->
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.poshytip.min.js"></script>
   <script type="text/javascript" >
 
-var loadTrack = function(track) { $('#deps').val(tracks[track]); refreshDeps(); },
-    tracks = {  'control': '2.12, 2.14, 2.017J, 2.151, 2.161, 2.673, 2.71, 2.737, 6.01, 6.02, 6.002, 6.003, 6.005, 6.034, 6.071, 6.115, 6.141J, 6.142J, 6.801, 6.S196, 16.30, 16.35, 16.410',
-                'sustainableglobal': '1.020, 1.080, 1.107, 2.500, 2.650, 2.66J, 2.722J, SP.722, 2.813, 3.080, EC.723, EC.711, SP.775, 1.801J, 4.231J, 11.601, 14.42, 14.44, 14.74, 17.181, 12.348J, SP.721, 11.025J, EC.715, SP.718, 1.851J, 2.965J, 11.491J, 14.771, 14.772, MAS.665J, 12.348J',
-                'management': '1.040, 2.96, 3.080, 15.053, 15.065, 15.7, 15.871, 15.872, 15.501, 15.616, 15.812, SP.784',
-                'environmental': '1.018, 1.020, 1.061, 1.070, 1.071, 1.080, 1.084, 1.083, 1.106, 1.107, 12.003, 12.009, 12.021, 12.086, 12.102, 12.120, 12.214, 12.301, 12.306, 12.340, 12.348',
-                'nanomicro': '2.370, 2.772J, 6.152J, 2.088J, 2.180, 2.374J, 2.391J, 2.500, 2.570, 2.60, 2.627, 2.673, 2.674, 2.71, 2.715, 2.760, 2.793',
-                'product': '15.301, 15.812, 15.501, 15.053, 15.075, 2.72, 2.739J, 2.744, 6.071, 6.041',
-                'entrepreneurship': 'MAS.863J, 2.96, 6.933, ESD.051, ESD.260, 1.040, 15.501, 15.812, 15.411, 15.431, 14.01, 14.02, 15.615, 15.390, ESD.251, ESD.265, 15.S24, 15.054',
-                'manufacturing': '2.14, 2.12, 2.72, 2.750, 2.853, 2.96, 2.888, 2.370, 2.813, 6.152J, 15.075J, 15.053, 15.668, ESD.267',
-                'transportation': '2.23, 2.28, 2.60J, 2.61, 2.612, 6.061, 6.141J, 6.142J, 6.281J, 16.682, 16.50, 16.512, 16.522, 1.010, 1.011, 1.041, 2.96, 6.01, 6.006, 6.007, 6.041, 6.046, 6.255J, 6.262, 6.264J, 15.053, 15.075, 15.501, 15.812',
-                'mechanics': '22.002, 2.672, 2.092, 18.330, 2.016, 2.51, 18.353J, 18.354J',
-                'energy': '2.28, 2.41, 2.42, 2.51, 2.60J, 2.61, 2.612, 2.625, 2.627, 2.650J, 2.66J, 2.67J, 2.813, 6.007, 6.061, 6.131, 10.27, 10.426, 22.05, 22.06, 1.071J',
-                'bio': '2.184, 2.673J, 2.772, 2.791J, 2.792J, 2.793J, 2.797J, 2.750, 6.002, 6.071J, 6.115, 6.131, 6.041, 18.443',
-                'all': '2.00, 2.12, 2.14, 2.017J, 2.151, 2.161, 2.673, 2.71, 2.737, 6.01, 6.02, 6.002, 6.003, 6.005, 6.034, 6.071, 6.115, 6.141J, 6.142J, 6.801, 6.S196, 16.30, 16.35, 16.410, 1.020, 1.080, 1.107, 2.500, 2.650, 2.66J, 2.722J, SP.722, 2.813, 3.080, EC.723, EC.711, SP.775, 1.801J, 4.231J, 11.601, 14.42, 14.44, 14.74, 17.181, 12.348J, SP.721, 11.025J, EC.715, SP.718, 1.851J, 2.965J, 11.491J, 14.771, 14.772, MAS.665J, 1.040, 2.96, 15.053, 15.065, 15.7, 15.871, 15.872, 15.501, 15.616, 15.812, 1.018, 1.061, 1.070, 1.071, 1.084, 1.083, 1.106, 12.003, 12.009, 12.021, 12.086, 12.102, 12.120, 12.214, 12.301, 12.306, 12.340, 12.348, 2.370, 2.772J, 6.152J, 2.088J, 2.180, 2.374J, 2.391J, 2.570, 2.60, 2.627, 2.674, 2.715, 2.760, 2.793, 15.301, 15.075, 2.72, 2.739J, 2.744, 6.041, MAS.863J, 6.933, ESD.051, ESD.260, 15.411, 15.431, 14.01, 14.02, 15.615, 15.390, ESD.251, ESD.265, 15.S24, 15.054, 2.750, 2.853, 2.888, 15.075J, 15.668, ESD.267, 2.23, 2.28, 2.60J, 2.61, 2.612, 6.061, 6.281J, 16.682, 16.50, 16.512, 16.522, 1.010, 1.011, 1.041, 6.006, 6.007, 6.046, 6.255J, 6.262, 6.264J, 22.002, 2.672, 2.092, 18.330, 2.016, 2.51, 18.353J, 18.354J, 2.41, 2.42, 2.625, 2.650J, 2.67J, 6.131, 10.27, 10.426, 22.05, 22.06, 1.071J, 2.184, 2.673J, 2.772, 2.791J, 2.792J, 2.793J, 2.797J, 6.071J, 18.443, SP.784'
-}
+var colors = []; // 24 shades  of rainbow, made by rotating hue while keeping saturation and value constant
+for (var i = 0; i < 24; i++) { colors[i] = d3.hsl(195+i*15,0.45,0.5); };
 
-// 24 shades  of rainbow, made by rotating hue while keeping saturation and value constant
-var hslString = function(hue) { return d3.hsl(hue,0.45,0.5); },
-    colors = [];
-for (var i = 0; i < 24; i++) { colors[i] = hslString(195+i*15); };
+$('#deps').val(''); // clear the area
 
-// Set SVG height and width by initial windowsize
 var width = window.innerWidth,
-    height = window.innerHeight+12,
-    radius = Math.min(width, height-24) / 2.1,
-    color = d3.scale.ordinal().range(colors);
+    height = window.innerHeight+12, // Set SVG height and width by initial windowsize
+    radius = Math.min(width, height-24) / 2.1, // make sure the circle fits
+    color = d3.scale.ordinal().range(colors), // use those colors!
+    path, percent_shown, mult,
+    alldeps = '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 20, 22, 24, ESD, SP, MAS, EC', // reset state
 
-var percent_shown = 100,
-    alldeps = '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 20, 22, 24, ESD, SP, MAS, EC';
-$('#deps').val('');
-var path,
-refreshDeps = function() {
-  percent_shown = 0;
-    if (!$('#deps').val()) { setTimeout(function() {$('#reset').css("display","inherit"); }, 1500) }
-    else { $('#reset').css("display","none"); }
+    refreshDeps = function() {
+      percent_shown = 0;
 
-    var value = function(d) { 
-      var mult = 0;
-      if (!d.children) {
-        deps = $('#deps').val().split(',');
-        for (var i = deps.length - 1; i >= 0; i--) {
-          dep = deps[i].replace(/ */,'').toUpperCase();
-          if (d.parent.id === dep.replace(/(\w{1,3})\..*/,'$1')) {
-            if (d.name.search(dep) === 0) { mult = 1; i = -1;}
+        if (!$('#deps').val()) { setTimeout(function() {$('#reset').css("display","inherit"); }, 1500) }
+        else { $('#reset').css("display","none"); }
+
+        var value = function(d) { 
+          mult = 0;
+          if (!d.children) {
+            deps = $('#deps').val().split(',');
+            for (var i = deps.length - 1; i >= 0; i--) {
+              dep = deps[i].replace(/ */,'').toUpperCase();
+              if (d.parent.id === dep.replace(/(\w{1,3})\..*/,'$1')) {
+                if (d.name.search(dep) === 0) { mult = 1; i = -1;}
+              }
+            }
+            percent_shown += d.pop*mult;
           }
-        }
-        percent_shown += d.pop*mult;
-        $("#percent_shown").text(percent_shown.toFixed(1));
-      }
-      return d.pop * mult; 
+          return d.pop * mult;
+        };
+      
+      path.data(partition.value(value).nodes)
+          .transition()
+            .duration(1250)
+            .attrTween("d", arcTween)
+          .transition()
+            .duration(1000)
+            .attr("d", arc
+                        .innerRadius(function(d) { return Math.sqrt(d.y); })
+                        .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );
+
+      $("#percent_shown").text(percent_shown.toFixed(1));
     };
 
-    path
-        .data(partition.value(value).nodes)
-      .transition()
-        .duration(1250)
-        .attrTween("d", arcTween).transition()
-           .duration(1000)
-           .attr("d", arc
-                      .innerRadius(function(d) { return Math.sqrt(d.y); })
-                      .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );
-}
-
-// Resize text based on SVG size
+// Resize text, and move center element, based on SVG size
 $('body').css("fontSize",(height/700)+'em');
 document.getElementById("title").style.left = (width/2)+'px';
 document.getElementById("title").style.top = (height/2)+'px';
 
+// Create large SVG canvas
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height * .52 + ")");
 
+// Make a partition to store values in
 var partition = d3.layout.partition()
     .sort(function(a,b) {return b.pop - a.pop; })
     .size([2 * Math.PI, radius * radius])
     .value(function(d) { return d.pop; });
 
+// Define an arc
 var arc = d3.svg.arc()
     .startAngle(function(d) { return d.x; })
     .endAngle(function(d) { return d.x + d.dx; })
     .innerRadius(function(d) { return Math.sqrt(d.y); })
     .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
 
+// Enter the data
 d3.json("2a_concentration.json", function(error, root) {
   path = svg.datum(root).selectAll("path")
       .data(partition.nodes)  
@@ -279,41 +279,45 @@ d3.json("2a_concentration.json", function(error, root) {
         .attr('xlink:href',  function(d) { return d.url ? d.url : null; })
         .classed("tooltip",  function(d) { return d.depth ? true : false; })
       .append("path")
-      .on("mouseover", function(d) {
-        d3.select(this).transition()
-           .duration(250)
-           .ease("circle")
-           .attr("d", arc
-              .innerRadius(function(d) { return Math.sqrt(Math.max(d.y - 0.1*d.dy*Math.pow(d.dx,-0.5),d.y-d.dy/1.2)); })
-              .outerRadius(function(d) { return Math.sqrt(d.y + d.dy*2); })  );   })
-      .on("mouseout", function(d) {
-        d3.select(this).transition()
-           .duration(375)
-           .ease("circle")
-           .attr("d", arc
-                      .innerRadius(function(d) { return Math.sqrt(d.y); })
-                      .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );   })
-      .attr("d", arc)
-      .classed("arc",true)
-      .classed("course",function(d) { return d.children ? true : false; })
-      .style("fill", function(d) { return d.depth ? color((d.children ? d : d.parent).name) : d3.rgb("#d3cccc"); })
+        .attr("d", arc)
+        .classed("arc",true)
+        .classed("course",function(d) { return d.children ? true : false; })
+        .style("fill", function(d) { return d.depth ? color((d.children ? d : d.parent).name) : d3.rgb("#d3cccc"); })
       .each(stash);
 
+  // Add course-click
   d3.selectAll(".course").on("mousedown", function(d) {
-    if (d.id == null) { dep = alldeps; }
+    if (d.id == null) { dep = alldeps; }  // reset if the center node is clicked
     else { dep = d.id; }
-    $('#deps').val(dep);
-    location.href = "#";
-    refreshDeps();
-  });
-
+    $('#deps').val(dep);  // set textbox value appropriately
+    location.href = "#";  // rehome location
+    refreshDeps();        // update values based on textbox contents
+  }); 
+  // Add textbox-filter
   d3.selectAll("#deps").on("keyup", function change() {
     if (false == 1 + $.inArray(d3.event.keyCode,[13,37,38,39,40])) {
-      location.href = "#";
-      refreshDeps();
+                           // don't trigger for enter or arrow keys
+      location.href = "#"; // rehome location
+      refreshDeps();       // update values based on textbox contents
     }
   });
+  // Add mouseover animations
+  d3.selectAll(".arc").on("mouseover", function(d) {
+      d3.select(this).transition()
+         .duration(250)
+         .ease("circle")
+         .attr("d", arc
+            .innerRadius(function(d) { return Math.sqrt(Math.max(d.y - 0.1*d.dy*Math.pow(d.dx,-0.5),d.y-d.dy/1.2)); })
+            .outerRadius(function(d) { return Math.sqrt(d.y + d.dy*2); })  );   })
+    .on("mouseout", function(d) {
+      d3.select(this).transition()
+         .duration(375)
+         .ease("circle")
+         .attr("d", arc
+                    .innerRadius(function(d) { return Math.sqrt(d.y); })
+                    .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );   })
 
+  // setup tooltips
   $('a.tooltip').poshytip({
       className: 'tip',
       followCursor: true,
@@ -325,15 +329,15 @@ d3.json("2a_concentration.json", function(error, root) {
       alignX: 'right',
       alignY: 'bottom',
       offsetX: 20,
-      offsetY: 40
-    });
+      offsetY: 40 });
+  // make visible and focus textbox
+  $('#deps').css("display","inherit").focus();
 
-    $('#deps').css("display","inherit").focus();
-
-    var hash = window.location.hash.substring(1);
-    if (hash) { loadTrack(hash); }
-
-    refreshDeps();
+  // are we somewhere in particular?
+  var hash = window.location.hash.substring(1);
+  if (hash) { loadTrack(hash); }
+  // update values based on textbox contents
+  refreshDeps();
 });
 
 // Stash the old values for transition.
@@ -345,17 +349,15 @@ function stash(d) {
 // Interpolate the arcs in data space.
 function arcTween(a) {
   var i = d3.interpolate({x: a.x0, dx: a.dx0}, a);
-  return function(t) {
-    var b = i(t);
-    a.x0 = b.x;
-    a.dx0 = b.dx;
-    return arc(b);
-  };
+  return  function(t) {
+            var b = i(t);
+            a.x0 = b.x;
+            a.dx0 = b.dx;
+            return arc(b);
+          };
 }
 
-d3.select(self.frameElement).style("height", height + "px");
-
-// Wait a bit, then set up nice tooltips
+// Make textbox popup help
 $('#deps').poshytip({
   className: 'tip-deps',
   showOn: 'focus',
@@ -368,5 +370,33 @@ $('#deps').poshytip({
   showAniDuration: 125,
   hideAniDuration: 375
 });
+
+var loadTrack = function(track) { $('#deps').val(tracks[track]); refreshDeps(); },
+tracks = {
+  control: '2.12, 2.14, 2.017J, 2.151, 2.161, 2.673, 2.71, 2.737, 6.01, 6.02, 6.002, 6.003, 6.005, 6.034, 6.071, 6.115, 6.141J, 6.142J, 6.801, 6.S196, 16.30, 16.35, 16.410',
+
+  sustainableglobal: '1.020, 1.080, 1.107, 2.500, 2.650, 2.66J, 2.722J, SP.722, 2.813, 3.080, EC.723, EC.711, SP.775, 1.801J, 4.231J, 11.601, 14.42, 14.44, 14.74, 17.181, 12.348J, SP.721, 11.025J, EC.715, SP.718, 1.851J, 2.965J, 11.491J, 14.771, 14.772, MAS.665J, 12.348J',
+
+  management: '1.040, 2.96, 3.080, 15.053, 15.065, 15.7, 15.871, 15.872, 15.501, 15.616, 15.812, SP.784',
+  environmental: '1.018, 1.020, 1.061, 1.070, 1.071, 1.080, 1.084, 1.083, 1.106, 1.107, 12.003, 12.009, 12.021, 12.086, 12.102, 12.120, 12.214, 12.301, 12.306, 12.340, 12.348',
+
+  nanomicro: '2.370, 2.772J, 6.152J, 2.088J, 2.180, 2.374J, 2.391J, 2.500, 2.570, 2.60, 2.627, 2.673, 2.674, 2.71, 2.715, 2.760, 2.793',
+
+  product: '15.301, 15.812, 15.501, 15.053, 15.075, 2.72, 2.739J, 2.744, 6.071, 6.041',
+  entrepreneurship: 'MAS.863J, 2.96, 6.933, ESD.051, ESD.260, 1.040, 15.501, 15.812, 15.411, 15.431, 14.01, 14.02, 15.615, 15.390, ESD.251, ESD.265, 15.S24, 15.054',
+
+  manufacturing: '2.14, 2.12, 2.72, 2.750, 2.853, 2.96, 2.888, 2.370, 2.813, 6.152J, 15.075J, 15.053, 15.668, ESD.267',
+
+  transportation: '2.23, 2.28, 2.60J, 2.61, 2.612, 6.061, 6.141J, 6.142J, 6.281J, 16.682, 16.50, 16.512, 16.522, 1.010, 1.011, 1.041, 2.96, 6.01, 6.006, 6.007, 6.041, 6.046, 6.255J, 6.262, 6.264J, 15.053, 15.075, 15.501, 15.812',
+
+  mechanics: '22.002, 2.672, 2.092, 18.330, 2.016, 2.51, 18.353J, 18.354J',
+
+  energy: '2.28, 2.41, 2.42, 2.51, 2.60J, 2.61, 2.612, 2.625, 2.627, 2.650J, 2.66J, 2.67J, 2.813, 6.007, 6.061, 6.131, 10.27, 10.426, 22.05, 22.06, 1.071J',
+
+  bio: '2.184, 2.673J, 2.772, 2.791J, 2.792J, 2.793J, 2.797J, 2.750, 6.002, 6.071J, 6.115, 6.131, 6.041, 18.443',
+
+  all: '2.00, 2.12, 2.14, 2.017J, 2.151, 2.161, 2.673, 2.71, 2.737, 6.01, 6.02, 6.002, 6.003, 6.005, 6.034, 6.071, 6.115, 6.141J, 6.142J, 6.801, 6.S196, 16.30, 16.35, 16.410, 1.020, 1.080, 1.107, 2.500, 2.650, 2.66J, 2.722J, SP.722, 2.813, 3.080, EC.723, EC.711, SP.775, 1.801J, 4.231J, 11.601, 14.42, 14.44, 14.74, 17.181, 12.348J, SP.721, 11.025J, EC.715, SP.718, 1.851J, 2.965J, 11.491J, 14.771, 14.772, MAS.665J, 1.040, 2.96, 15.053, 15.065, 15.7, 15.871, 15.872, 15.501, 15.616, 15.812, 1.018, 1.061, 1.070, 1.071, 1.084, 1.083, 1.106, 12.003, 12.009, 12.021, 12.086, 12.102, 12.120, 12.214, 12.301, 12.306, 12.340, 12.348, 2.370, 2.772J, 6.152J, 2.088J, 2.180, 2.374J, 2.391J, 2.570, 2.60, 2.627, 2.674, 2.715, 2.760, 2.793, 15.301, 15.075, 2.72, 2.739J, 2.744, 6.041, MAS.863J, 6.933, ESD.051, ESD.260, 15.411, 15.431, 14.01, 14.02, 15.615, 15.390, ESD.251, ESD.265, 15.S24, 15.054, 2.750, 2.853, 2.888, 15.075J, 15.668, ESD.267, 2.23, 2.28, 2.60J, 2.61, 2.612, 6.061, 6.281J, 16.682, 16.50, 16.512, 16.522, 1.010, 1.011, 1.041, 6.006, 6.007, 6.046, 6.255J, 6.262, 6.264J, 22.002, 2.672, 2.092, 18.330, 2.016, 2.51, 18.353J, 18.354J, 2.41, 2.42, 2.625, 2.650J, 2.67J, 6.131, 10.27, 10.426, 22.05, 22.06, 1.071J, 2.184, 2.673J, 2.772, 2.791J, 2.792J, 2.793J, 2.797J, 6.071J, 18.443, SP.784'
+};
+
   </script>
 </body>
