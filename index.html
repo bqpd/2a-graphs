@@ -248,7 +248,7 @@ d3.json("2a_concentration.json", function(error, root) {
       if (!d.children) {
         deps = $('#deps').val().split(',');
         for (var i = deps.length - 1; i >= 0; i--) {
-          dep = deps[i].replace(/ */,'');
+          dep = deps[i].replace(/ */,'').toUpperCase();
           if (d.parent.id === dep.replace(/(\w{1,3})\..*/,'$1')) {
             if (d.name.search(dep) === 0) { mult = 1; i = -1;}
           }
