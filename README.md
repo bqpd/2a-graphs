@@ -3,7 +3,7 @@
 
 A [sunburst representation](http://bl.ocks.org/4063423) of the variety of 2A concentrations at MIT. [See it here](http://web.mit.edu/eburn/www/2a)
 
-Requires [d3](https://github.com/mbostock/d3/wiki) for the visualization, and jQuery for some odds and ends.
+Requires [d3](https://github.com/mbostock/d3/) for the visualization, [poshytip](http://vadikom.com/demos/poshytip/) for the tooltips, and [jQuery](http://www.jquery.com) for some odds and ends.
 
 toolchain
 ----------
@@ -17,14 +17,9 @@ still done by hand
 todo
 -----
 - cleanup and comment the javascript
-- fix the animation bug
-- make tooltips scale with the rest of it
 - make it a meteor app, and show what the last twentyorso people moused over
  	- should work well with animations?
 
 notes
 ------
-there are three basic sorts:
-- by number of people in a class
-- by department
-- by the concentration group
+there's the potential for extending it to search by people (in particular tracks, who are taking a particular course, etc.)
