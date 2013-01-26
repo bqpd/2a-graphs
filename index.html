@@ -16,6 +16,7 @@ body {
 
 #title {
   position: absolute;
+  right: 0;
   margin: -5em 0 0 -10em;
   width: 20em;
   height: 0em;
@@ -293,7 +294,7 @@ d3.json("2a_concentration.json", function(error, root) {
       offsetX: 20,
       offsetY: 40
     });
-  
+
     $('#deps').css("display","inherit");
 });
 
@@ -324,7 +325,7 @@ $('#deps').poshytip({
   alignX: 'center',
   alignY: 'bottom',
   offsetX: 0,
-  offsetY: 15,
+  offsetY: 14,
   slide: false,
   showAniDuration: 125,
   hideAniDuration: 375
