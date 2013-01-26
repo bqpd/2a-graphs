@@ -111,6 +111,12 @@ form {
   outline-width: 0;
 }
 
+#course {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.7em;
+}
+
   </style>
 </head>
 
@@ -121,8 +127,8 @@ form {
       showing  <span id="percent_shown">100.0</span>% of concentration classes</strong>
         <form>
           <textarea name="deps" id="deps"  spellcheck="false" onkeypress="return event.keyCode != 13;"
-                    title='<strong><i>enter comma-separated course names         <br></strong>
-                                      (e.g., "2", "ESD", "4, 11, MAS")            <br style="margin-bottom: 0.7em;">
+                    title='<p id="course" style="margin-bottom: 0.7em"><strong><i>enter comma-separated course names         <br></strong>
+                                      (e.g., "2", "ESD", "4, 11, MAS")            </p>
                             <strong>  or partial class names    <br></strong>
                                       (e.g., "2.00" will show 2.007 but not 2.72)'></textarea>
         </form>
