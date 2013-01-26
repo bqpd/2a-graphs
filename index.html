@@ -16,11 +16,22 @@ body {
 
 #title {
   position: absolute;
-  margin: -5em 0 0 -10em;
+  margin: -3em 0 0 -10em;
   width: 20em;
   height: 0em;
   text-align: center;
   line-height: 1.4em;
+}
+
+#reset {
+  color: #d3cccc;
+  position: absolute;
+  text-align: absolute;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  margin-top: 3em;
+  display: none;
 }
 
 .tip, .tip-deps {
@@ -99,8 +110,8 @@ form {
 </head>
 
 <body><!DOCTYPE html>
+  <div id="reset">click the dot to reset</div>
   <div id="title">
-    <span id="reset" style="color: #d3cccc;"><i> click the dot to reset</i></span><p><p>
     <h1>what do 2A students pick for their classes?</h1>
       showing  <span id="percent_shown">100.0</span>% of concentration classes</strong>
         <form>
@@ -188,7 +199,7 @@ d3.json("2a_concentration.json", function(error, root) {
     if (d.id == null) { dep = alldeps; }
     else { dep = d.id; }
     $('#deps').val(dep);
-    $('#reset').css("color","#d3cccc");
+    $('#reset').css("display","none");
 
     var value = function(d) { 
       if (!($('#deps').val())) { $('#deps').val(alldeps); }
@@ -217,8 +228,8 @@ d3.json("2a_concentration.json", function(error, root) {
 
   d3.selectAll("#deps").on("keyup", function change() {
     percent_shown = 0;
-    if (!$('#deps').val()) { $('#reset').css("color","#333"); }
-    else { $('#reset').css("color","#d3cccc"); }
+    if (!$('#deps').val()) { setTimeout(function() {$('#reset').css("display","inherit"); }, 1500) }
+    else { $('#reset').css("display","none"); }
 
     var value = function(d) { 
       var mult = 0;
