@@ -71,11 +71,6 @@ body {
   stroke-opacity: 0.4;
 }
 
-form {
-  margin: 0.4em 0;
-  padding: 0;
-}
-
 h1 {
   margin: 0;
   margin-bottom: 0.18em;
@@ -98,14 +93,14 @@ form {
   color: #e3dada;
   width:  15em;
   font-size: 0.8em;
-  margin: 0;
+  margin: 0 auto 0.9em auto;
   width: 23em;
   height: 3em;
-  margin-bottom: 0.9em;
   text-align: center;
           border-radius: 0 0 1em 1em;
      -moz-border-radius: 0 0 1em 1em;
   -webkit-border-radius: 0 0 1em 1em;
+  display: none;
 }
 
 #deps:focus {
@@ -122,21 +117,21 @@ form {
   position: absolute;
   top:   4px;
   left: 4px;
-  height: 24px;
+  height: 32px;
   margin-top: 12px;
   overflow: hidden;
 }
 
 #github a img:hover{
   position: relative; 
-  top: -24px;
+  top: -32px;
 } 
 
   </style>
 </head>
 
 <body><!DOCTYPE html>
-  <div id="github"><a href="https://github.com/bqpd/2a-graphs" title="bqpd/2a-graphs"><img alt="link to this project on github" src="github.png" width="24px"/></a></div>
+  <div id="github"><a href="https://github.com/bqpd/2a-graphs" title="bqpd/2a-graphs"><img alt="link to this project on github" src="github.png" width="32px"/></a></div>
   <div id="reset">click the dot to reset</div>
   <div id="title">
     <h1>what's in a 2A concentration?</h1>
@@ -145,7 +140,7 @@ form {
           <textarea name="deps" id="deps"  spellcheck="false" onkeypress="return event.keyCode != 13;"
                     title='<p id="course" style="margin-bottom: 0.7em"><strong><i>enter comma-separated course names         <br></strong>
                                       (e.g., "2", "ESD", "4, mas, 11")            </p>
-                            <strong>  or partial class names    <br></strong>
+                            <strong>  or filter with partial class names    <br></strong>
                                       (e.g., "2.00" will show 2.007 but not 2.72)'></textarea>
         </form>
       <i> edit the box above to filter classes <br> click a course to show it alone <br> click the center dot to reset</i>
@@ -333,8 +328,10 @@ $(setTimeout(
       alignY: 'bottom',
       offsetX: 20,
       offsetY: 40
-    });}
-  , 750)
+    });
+    $('#deps').css("display","inherit");
+  }
+  , 10)
 );
   </script>
 </body>
