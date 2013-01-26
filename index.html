@@ -50,6 +50,7 @@ body {
   color:  #e3dada;
   background-color:  #666;
   font-size:  0.8em;
+  pointer-events: none
   -webkit-box-shadow: 0.1em 0.1em 0.2em 0.1em #555;
      -moz-box-shadow: 0.1em 0.1em 0.2em 0.1em #555;
           box-shadow: 0.1em 0.1em 0.2em 0.1em #555;
@@ -146,7 +147,9 @@ a {
 
   </style>
 </head>
-
+<!--============================================================================================================================-->
+<!-- BODY HTML ================================================================================================================-->
+<!--============================================================================================================================-->
 <body><!DOCTYPE html>
 <!-- BACKGROUND DIVS ==========================================================================================================-->
   <div id="github"><a href="https://github.com/bqpd/2a-graphs" title="bqpd/2a-graphs">
@@ -156,19 +159,19 @@ a {
 
   <div id="tracks">
     <p style="text-align: left; margin: 0 0 0.3em 0;"> concentration tracks </p>
-    <a href="#all"                onclick="loadTrack('all');">                [all tracks combined]</a><br>
-    <a href="#control"            onclick="loadTrack('control');">            control, instrumentation, and robotics</a><br>
-    <a href="#sustainableglobal"  onclick="loadTrack('sustainableglobal');">  sustainable and global development</a><br>
-    <a href="#management"         onclick="loadTrack('management');">         engineering management</a><br>
-    <a href="#environmental"      onclick="loadTrack('environmental');">      environmental mechanics</a><br>
-    <a href="#nanomicro"          onclick="loadTrack('nanomicro');">          nano/micro engineering</a><br>
-    <a href="#product"            onclick="loadTrack('product');">            product development</a><br>
-    <a href="#entrepreneurship"   onclick="loadTrack('entrepreneurship');">   entrepreneurship</a><br>
-    <a href="#manufacturing"      onclick="loadTrack('manufacturing');">      manufacturing</a><br>
-    <a href="#transportation"     onclick="loadTrack('transportation');">     transportation</a><br>
-    <a href="#mechanics"          onclick="loadTrack('mechanics');">          mechanics</a><br>
-    <a href="#energy"             onclick="loadTrack('energy');">             energy</a><br>
-    <a href="#bio"                onclick="loadTrack('bio');">                bio</a>
+    <a id="all" href="#all"                onclick="loadTrack('all');">                [all tracks combined]</a><br>
+    <a id="control" href="#control"            onclick="loadTrack('control');">            control, instrumentation, and robotics</a><br>
+    <a id="sustainableglobal" href="#sustainableglobal"  onclick="loadTrack('sustainableglobal');">  sustainable and global development</a><br>
+    <a id="management" href="#management"         onclick="loadTrack('management');">         engineering management</a><br>
+    <a id="environmental" href="#environmental"      onclick="loadTrack('environmental');">      environmental mechanics</a><br>
+    <a id="nanomicro" href="#nanomicro"          onclick="loadTrack('nanomicro');">          nano/micro engineering</a><br>
+    <a id="product" href="#product"            onclick="loadTrack('product');">            product development</a><br>
+    <a id="entrepreneurship" href="#entrepreneurship"   onclick="loadTrack('entrepreneurship');">   entrepreneurship</a><br>
+    <a id="manufacturing" href="#manufacturing"      onclick="loadTrack('manufacturing');">      manufacturing</a><br>
+    <a id="transportation" href="#transportation"     onclick="loadTrack('transportation');">     transportation</a><br>
+    <a id="mechanics" href="#mechanics"          onclick="loadTrack('mechanics');">          mechanics</a><br>
+    <a id="energy" href="#energy"             onclick="loadTrack('energy');">             energy</a><br>
+    <a id="bio" href="#bio"                onclick="loadTrack('bio');">                bio</a>
   </div>
 <!-- CENTER DOT DIVS ====================================================================================================-->
   <div id="title">
@@ -241,6 +244,7 @@ var width = window.innerWidth,
                         .innerRadius(function(d) { return Math.sqrt(d.y); })
                         .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); })  );
 
+      percent_shown /= 12.18;
       $("#percent_shown").text(percent_shown.toFixed(1));
     };
 
@@ -275,7 +279,11 @@ d3.json("2a_concentration.json", function(error, root) {
       .data(partition.nodes)  
     .enter()
       .append("svg:a")
-        .attr('xlink:title', function(d) { return d.depth ? d.name+' ('+d.value.toFixed(1)+'%)' : null; })
+        .attr('xlink:title', function(d) {
+                                            title = d.depth ? d.name : null;
+                                            if (!d.children) { title += '<br>(picked by '+d.pop+' students)'; }
+                                            return title;
+                                          })
         .attr('xlink:href',  function(d) { return d.url ? d.url : null; })
         .classed("tooltip",  function(d) { return d.depth ? true : false; })
       .append("path")
@@ -291,6 +299,7 @@ d3.json("2a_concentration.json", function(error, root) {
     else { dep = d.id; }
     $('#deps').val(dep);  // set textbox value appropriately
     location.href = "#";  // rehome location
+    $('#tracks a').css("color","#777").css("font-weight","inherit").css("text-decoration","underline");
     refreshDeps();        // update values based on textbox contents
   }); 
   // Add textbox-filter
@@ -298,6 +307,7 @@ d3.json("2a_concentration.json", function(error, root) {
     if (false == 1 + $.inArray(d3.event.keyCode,[13,37,38,39,40])) {
                            // don't trigger for enter or arrow keys
       location.href = "#"; // rehome location
+      $('#tracks a').css("color","#777").css("font-weight","inherit").css("text-decoration","underline");
       refreshDeps();       // update values based on textbox contents
     }
   });
@@ -371,7 +381,11 @@ $('#deps').poshytip({
   hideAniDuration: 375
 });
 
-var loadTrack = function(track) { $('#deps').val(tracks[track]); refreshDeps(); },
+var loadTrack = function(track) {
+  $('#deps').val(tracks[track]);
+  $('#tracks a').css("color","#777").css("font-weight","inherit").css("text-decoration","underline");
+  $('#'+track).css("color","#d3cccc").css("font-weight","700").css("text-decoration","none");
+  refreshDeps(); },
 tracks = {
   control: '2.12, 2.14, 2.017J, 2.151, 2.161, 2.673, 2.71, 2.737, 6.01, 6.02, 6.002, 6.003, 6.005, 6.034, 6.071, 6.115, 6.141J, 6.142J, 6.801, 6.S196, 16.30, 16.35, 16.410',
 

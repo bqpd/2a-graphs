@@ -1,6 +1,5 @@
 import csv, json, codecs, urllib2, re
 
-totPop = 12.18; # total population divided by 100
 Data = {'name':'2A Concentration Classes', 'children': []}		# Initialize JSON structure
 ClassDescs = {
 # Classes in the course catalog will be downloaded: these are the ones that aren't there.
@@ -34,8 +33,8 @@ def lookForNode(name,parent,children=False):
 
 def increaseStat(resource,stat):
 	'''Given dictionary 'resource', increment/initialize the value of 'stat'.'''
-	try:				resource[stat] += 1/totPop
-	except KeyError:	resource[stat] = 1/totPop
+	try:				resource[stat] += 1
+	except KeyError:	resource[stat] = 1
 
 with open('conc clean.csv', 'rb') as csvfile:
 	for row in csv.reader(csvfile, delimiter=','):
