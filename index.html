@@ -290,6 +290,7 @@ d3.json("2a_concentration.json", function(error, root) {
                                             return title;
                                           })
         .attr('xlink:href',  function(d) { return d.url ? d.url : null; })
+        .attr("target","_blank")
         .classed("tooltip",  function(d) { return d.depth ? true : false; })
       .append("path")
         .attr("d", arc)
