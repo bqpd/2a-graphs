@@ -63,7 +63,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 17404,
+				"buffer_size": 17430,
 				"line_ending": "Unix"
 			}
 		},
@@ -157,6 +157,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#reset",
 			"dot",
 			"onclick=",
 			"<a href=\"#(\\w*)\"",
@@ -283,8 +284,7 @@
 			"22.07\\n",
 			"5.31\\n",
 			"(1.0[5,6])\\n",
-			"1.0([5,6])\\n",
-			"1.07\\n"
+			"1.0([5,6])\\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -419,15 +419,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 17404,
+						"buffer_size": 17430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9054,
-								9054
+								8083,
+								8083
 							]
 						],
 						"settings":
@@ -437,7 +437,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4006.0,
+						"translation.y": 2655.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

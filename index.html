@@ -217,7 +217,7 @@ var width = window.innerWidth,
     refreshDeps = function() {
       percent_shown = 0;
 
-        if (!$('#deps').val()) { setTimeout(function() {$('#reset').css("display","inherit"); }, 1500) }
+        if (!$('#deps').val()) { setTimeout(function() { if (!$('#deps').val()) { $('#reset').css("display","inherit"); } }, 1500); }
         else { $('#reset').css("display","none"); }
 
         var value = function(d) { 
