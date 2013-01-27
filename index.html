@@ -156,7 +156,7 @@ a {
   <div id="github"><a href="https://github.com/bqpd/2a-graphs" title="bqpd/2a-graphs">
   <img alt="link to this project on github" src="github.png" width="32px"/></a></div>
 
-  <div id="reset">click the dot to start</div>
+  <div id="reset">click the circle to start</div>
 
   <div id="tracks">
     <p style="text-align: left; margin: 0 0 0.3em 0;"> concentration tracks </p>
@@ -174,7 +174,7 @@ a {
     <a id="energy" href="#energy"             onclick="loadTrack('energy');">             energy</a><br>
     <a id="bio" href="#bio"                onclick="loadTrack('bio');">                bio</a>
   </div>
-<!-- CENTER DOT DIVS ====================================================================================================-->
+<!-- CENTER CIRCLE DIVS ====================================================================================================-->
   <div id="title">
 
     <h1>what's in a 2A concentration?</h1>
@@ -189,9 +189,9 @@ a {
                            </p><strong>   or filter with partial class names
                           <br></strong>     (e.g., "2.00" will show 2.007 but not 2.72)'></textarea>
 
-      <i> edit the box above to filter classes
-     <br> click a course to show it alone
-     <br> click the center dot to reset
+      <i> edit the list above to search or filter
+     <br> click arcs to zoom in or see details
+     <br> click the circle to zoom out
      </i>
   </div>
 <!--============================================================================================================================-->
@@ -345,7 +345,7 @@ d3.json("2a_concentration.json", function(error, root) {
       offsetX: 20,
       offsetY: 40 });
   // make visible and focus textbox
-  $('#deps').css("display","inherit").focus();
+  $('#deps').css("display","inherit");
 
   // are we somewhere in particular?
   var hash = window.location.hash.substring(1);
