@@ -55,7 +55,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 947,
+				"buffer_size": 1136,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,7 +63,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 17449,
+				"buffer_size": 17482,
 				"line_ending": "Unix"
 			}
 		},
@@ -157,6 +157,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".tooltip",
 			"#reset",
 			"dot",
 			"onclick=",
@@ -283,8 +284,7 @@
 			"\\{\\n +(.+)\\n +(.+)\\n +\\}",
 			"22.07\\n",
 			"5.31\\n",
-			"(1.0[5,6])\\n",
-			"1.0([5,6])\\n"
+			"(1.0[5,6])\\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -385,7 +385,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -393,15 +393,15 @@
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 947,
+						"buffer_size": 1136,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								683,
-								683
+								1136,
+								1136
 							]
 						],
 						"settings":
@@ -419,15 +419,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 17449,
+						"buffer_size": 17482,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2080,
-								2080
+								10831,
+								10831
 							]
 						],
 						"settings":
@@ -437,7 +437,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 806.0,
+						"translation.y": 3500.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

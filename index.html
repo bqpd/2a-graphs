@@ -9,6 +9,7 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   margin: 0;
   position: absolute;
   top: -12px;
@@ -147,6 +148,24 @@ a {
   font-size: 0.8em;
 }
 
+#email {
+  position: absolute;
+  left: 4px;
+  top: 44px;
+  color: #777;
+  height: auto;
+}
+
+#email a {
+  color: #a39999;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+#email a:hover {
+  color: #d3cccc;
+}
+
   </style>
 </head>
 <!--============================================================================================================================-->
@@ -156,11 +175,12 @@ a {
 <!-- BACKGROUND DIVS ==========================================================================================================-->
   <div id="github"><a href="https://github.com/bqpd/2a-graphs" title="bqpd/2a-graphs">
   <img alt="link to this project on github" src="github.png" width="32px"/></a></div>
+  <div id="email">feedback.<br><a href="mailto:eburn@mit.edu">how could this<br>be more useful?</a></div>
 
   <div id="reset">click the circle to start</div>
 
   <div id="tracks">
-    <p style="text-align: left; margin: 0 0 0.3em 0;"> concentration tracks </p>
+    <p style="text-align: left; margin: 0 0 0.3em 0;"> classes that are in tracks </p>
     <a id="all" href="#all"                onclick="loadTrack('all');">                [all tracks combined]</a><br>
     <a id="control" href="#control"            onclick="loadTrack('control');">            control, instrumentation, and robotics</a><br>
     <a id="sustainableglobal" href="#sustainableglobal"  onclick="loadTrack('sustainableglobal');">  sustainable and global development</a><br>
@@ -178,7 +198,7 @@ a {
 <!-- CENTER CIRCLE DIVS ====================================================================================================-->
   <div id="title">
 
-    <h1>what's in a 2A concentration?</h1>
+    <h1>what classes make up 2A?</h1>
 
       showing  <span id="percent_shown">100.0</span>% of concentration classes</strong>
 

@@ -23,3 +23,4 @@ todo
 notes
 ------
 there's the potential for extending it to search by people (in particular tracks, who are taking a particular course, etc.)
+for the tracks, it's currently sorta misleading as to what it's representing. I'm saying who belong to a given track, while those lokoing for classes are more interested in the above. Hmm.
